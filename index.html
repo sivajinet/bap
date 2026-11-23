@@ -1,0 +1,2543 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book A Plot | CRDA, HMDA & DTCP Verified Land. Zero Hassle.</title>
+    <meta name="description" content="Discover and book 100% legally verified CRDA, HMDA, DTCP & RERA approved residential, commercial, and agricultural plots online. Transparent pricing and hassle-free registration with Book A Plot.">
+    
+    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Crisp Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            200: '#a7f3d0',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                        },
+                        slate: {
+                            850: '#151e2e',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-600 selection:text-white flex flex-col min-h-screen">
+
+    <!-- Top Trust & Announcement Bar -->
+    <div class="bg-slate-900 text-slate-200 text-xs py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center space-x-4">
+                <span class="flex items-center text-brand-400 font-medium">
+                    <i class="fa-solid fa-shield-halved mr-1.5"></i> 100% CRDA / HMDA / DTCP / RERA Verified Layouts
+                </span>
+                <span class="hidden sm:inline text-slate-500">|</span>
+                <span class="hidden sm:flex items-center">
+                    <i class="fa-solid fa-rotate-left mr-1.5 text-amber-400"></i> 100% Refundable Token Booking
+                </span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="tel:+919492900365" class="hover:text-white transition"><i class="fa-solid fa-phone mr-1 text-brand-400"></i> +91 94929 00365</a>
+                <button onclick="navigateTo('contact')" class="text-brand-400 hover:text-brand-300 font-semibold underline underline-offset-2">Book Free Cab Visit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Sticky Navigation Header -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Brand Logo -->
+                <div class="flex items-center cursor-pointer group" onclick="navigateTo('home')">
+                    <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-600 to-brand-800 flex items-center justify-center text-white shadow-md shadow-brand-600/20 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-map-location-dot text-xl"></i>
+                    </div>
+                    <div class="ml-3">
+                        <span class="font-display font-extrabold text-xl tracking-tight text-slate-900 block leading-none">Book A <span class="text-brand-600">Plot</span></span>
+                        <span class="text-[11px] font-medium text-slate-500 tracking-wider uppercase">Verified Land Portal</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center space-x-1" id="desktop-nav">
+                    <button data-page="home" onclick="navigateTo('home')" class="nav-link px-3.5 py-2 rounded-lg text-sm font-semibold text-brand-700 bg-brand-50 transition">Home</button>
+                    <button data-page="plots" onclick="navigateTo('plots')" class="nav-link px-3.5 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition">Verified Plots</button>
+                    <button data-page="layout-map" onclick="navigateTo('layout-map')" class="nav-link px-3.5 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition flex items-center">
+                        <span>Interactive Layout Map</span>
+                        <span class="ml-1.5 px-1.5 py-0.5 text-[10px] font-bold bg-amber-100 text-amber-800 rounded-full">LIVE</span>
+                    </button>
+                    <button data-page="how-it-works" onclick="navigateTo('how-it-works')" class="nav-link px-3.5 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition">How It Works</button>
+                    <button data-page="about" onclick="navigateTo('about')" class="nav-link px-3.5 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition">About Us</button>
+                    <button data-page="contact" onclick="navigateTo('contact')" class="nav-link px-3.5 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition">Contact</button>
+                </nav>
+
+                <!-- Action Buttons -->
+                <div class="hidden md:flex items-center space-x-2.5">
+                    <button onclick="openAssociatePortal()" id="header-associate-btn" class="px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs sm:text-sm font-semibold transition flex items-center shadow-sm">
+                        <i class="fa-solid fa-user-tie text-amber-400 mr-1.5"></i>
+                        <span id="header-associate-label">Associate Portal</span>
+                    </button>
+                    <button onclick="openMyBookingsModal()" class="relative px-3.5 py-2 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-50 text-sm font-semibold transition flex items-center">
+                        <i class="fa-solid fa-bookmark text-brand-600 mr-2"></i>
+                        <span>Saved</span>
+                        <span id="saved-count-badge" class="ml-1.5 px-1.5 py-0.5 text-xs bg-brand-600 text-white rounded-full">0</span>
+                    </button>
+                    <button onclick="navigateTo('plots')" class="px-4 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold shadow-sm shadow-brand-600/25 transition">
+                        Explore Plots
+                    </button>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <div class="flex items-center lg:hidden space-x-2">
+                    <button onclick="openAssociatePortal()" class="p-2.5 rounded-xl bg-slate-900 text-amber-400 text-xs font-bold flex items-center">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </button>
+                    <button onclick="openMyBookingsModal()" class="relative p-2.5 rounded-xl border border-slate-200 text-slate-700">
+                        <i class="fa-solid fa-bookmark text-brand-600"></i>
+                        <span id="mobile-saved-badge" class="absolute -top-1 -right-1 px-1.5 py-0.2 text-[10px] bg-brand-600 text-white rounded-full">0</span>
+                    </button>
+                    <button onclick="toggleMobileMenu()" class="p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none" aria-label="Toggle Menu">
+                        <i id="mobile-menu-icon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-200 px-4 pt-3 pb-5 space-y-1.5 shadow-lg">
+            <button data-page="home" onclick="navigateTo('home'); toggleMobileMenu()" class="mobile-nav-link block w-full text-left px-4 py-3 rounded-xl text-base font-semibold bg-brand-50 text-brand-700">Home</button>
+            <button data-page="plots" onclick="navigateTo('plots'); toggleMobileMenu()" class="mobile-nav-link block w-full text-left px-4 py-3 rounded-xl text-base font-medium text-slate-700 hover:bg-slate-50">Verified Plots</button>
+            <button data-page="layout-map" onclick="navigateTo('layout-map'); toggleMobileMenu()" class="mobile-nav-link block w-full text-left px-4 py-3 rounded-xl text-base font-medium text-slate-700 hover:bg-slate-50 flex items-center justify-between">
+                <span>Interactive Layout Map</span>
+                <span class="px-2 py-0.5 text-xs font-bold bg-amber-100 text-amber-800 rounded-full">LIVE</span>
+            </button>
+            <button data-page="how-it-works" onclick="navigateTo('how-it-works'); toggleMobileMenu()" class="mobile-nav-link block w-full text-left px-4 py-3 rounded-xl text-base font-medium text-slate-700 hover:bg-slate-50">How It Works</button>
+            <button data-page="about" onclick="navigateTo('about'); toggleMobileMenu()" class="mobile-nav-link block w-full text-left px-4 py-3 rounded-xl text-base font-medium text-slate-700 hover:bg-slate-50">About Us</button>
+            <button data-page="contact" onclick="navigateTo('contact'); toggleMobileMenu()" class="mobile-nav-link block w-full text-left px-4 py-3 rounded-xl text-base font-medium text-slate-700 hover:bg-slate-50">Contact & Site Visit</button>
+            <div class="pt-2 border-t border-slate-100 grid grid-cols-2 gap-2">
+                <button onclick="navigateTo('associate-login'); toggleMobileMenu()" class="px-4 py-3 rounded-xl bg-slate-900 text-white text-sm font-semibold text-center">
+                    <i class="fa-solid fa-right-to-bracket text-amber-400 mr-1.5"></i> Associate Login
+                </button>
+                <button onclick="navigateTo('associate-register'); toggleMobileMenu()" class="px-4 py-3 rounded-xl bg-brand-600 text-white text-sm font-semibold text-center">
+                    <i class="fa-solid fa-user-plus mr-1.5"></i> Join Associate
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT CONTAINER (Multi-Page SPA Views) -->
+    <main class="flex-grow">
+
+        <!-- ========================================================= -->
+        <!-- PAGE 1: HOME VIEW                                         -->
+        <!-- ========================================================= -->
+        <section id="page-home" class="page-view block">
+            <!-- Hero Section -->
+            <div class="relative overflow-hidden bg-slate-900 text-white">
+                <!-- Decorative Background Pattern & Image Overlay -->
+                <div class="absolute inset-0 opacity-25">
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1920&q=80" 
+                         onerror="this.src='https://placehold.co/1920x900/064e3b/ffffff?text=Verified+Open+Plots'" 
+                         alt="Lush green plotted land development" 
+                         class="w-full h-full object-cover">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-slate-900/60"></div>
+
+                <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-28">
+                    <div class="grid lg:grid-cols-12 gap-12 items-center">
+                        <!-- Hero Left Copy -->
+                        <div class="lg:col-span-7 space-y-6">
+                            <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-brand-500/15 border border-brand-400/30 text-brand-300 text-xs sm:text-sm font-medium">
+                                <span class="w-2 h-2 rounded-full bg-brand-400 animate-pulse"></span>
+                                <span>Verified Land. Transparent Deals. Zero Hassle.</span>
+                            </div>
+
+                            <h1 class="font-display text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.12]">
+                                Own Your Piece of the Future—<span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-300">100% Verified</span> & Hassle-Free.
+                            </h1>
+
+                            <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
+                                Browse legally vetted residential, commercial, and agricultural plots. View clear digital layouts, verify CRDA/HMDA/DTCP/RERA approvals online, and reserve your plot with complete transparency.
+                            </p>
+
+                            <!-- Primary & Secondary CTAs -->
+                            <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                                <button onclick="navigateTo('plots')" class="px-7 py-4 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-semibold text-base shadow-lg shadow-brand-600/30 transition flex items-center justify-center">
+                                    <span>Explore Verified Plots</span>
+                                    <i class="fa-solid fa-arrow-right ml-2.5"></i>
+                                </button>
+                                <button onclick="navigateTo('layout-map')" class="px-7 py-4 rounded-xl bg-white/10 hover:bg-white/15 backdrop-blur-sm border border-white/20 text-white font-semibold text-base transition flex items-center justify-center">
+                                    <i class="fa-solid fa-map mr-2.5 text-brand-400"></i>
+                                    <span>Interactive Layout Map</span>
+                                </button>
+                            </div>
+
+                            <!-- Key Trust Metrics -->
+                            <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-800 max-w-xl">
+                                <div>
+                                    <div class="font-display text-2xl sm:text-3xl font-bold text-white">100%</div>
+                                    <div class="text-xs sm:text-sm text-slate-400">Clear Title Deeds</div>
+                                </div>
+                                <div>
+                                    <div class="font-display text-2xl sm:text-3xl font-bold text-brand-400">45+</div>
+                                    <div class="text-xs sm:text-sm text-slate-400">Approved Ventures</div>
+                                </div>
+                                <div>
+                                    <div class="font-display text-2xl sm:text-3xl font-bold text-white">₹0</div>
+                                    <div class="text-xs sm:text-sm text-slate-400">Brokerage / Hidden Fee</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hero Right Quick Search Card -->
+                        <div class="lg:col-span-5">
+                            <div class="bg-white text-slate-800 rounded-2xl p-6 sm:p-8 shadow-2xl border border-slate-100">
+                                <div class="flex items-center justify-between mb-5">
+                                    <div>
+                                        <h2 class="font-display text-xl font-bold text-slate-900">Find Your Ideal Plot</h2>
+                                        <p class="text-xs text-slate-500 mt-0.5">Filter 100% legally vetted land parcels</p>
+                                    </div>
+                                    <span class="px-2.5 py-1 rounded-lg bg-brand-50 text-brand-700 text-xs font-bold">
+                                        <i class="fa-solid fa-check-circle mr-1"></i>RERA Ready
+                                    </span>
+                                </div>
+
+                                <div class="space-y-4">
+                                    <div>
+                                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1.5">Preferred Corridor / Location</label>
+                                        <select id="hero-location" class="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-800 focus:border-brand-600 focus:bg-white focus:outline-none">
+                                            <option value="all">All Prime Corridors (AP & TS)</option>
+                                            <option value="Guntur ORR (₹6,000/Sq.Yd)">Guntur ORR Belt (₹6,000/Sq.Yd CRDA)</option>
+                                            <option value="Amaravati (CRDA)">Amaravati Capital Corridor (CRDA)</option>
+                                            <option value="Vijayawada-Guntur">Vijayawada–Guntur Expressway (CRDA)</option>
+                                            <option value="Shadnagar">Shadnagar (NH-44 Growth Corridor)</option>
+                                            <option value="Shankarpally">Shankarpally (IT & Villa Hub)</option>
+                                            <option value="Yadagirigutta">Yadagirigutta (Warangal Highway)</option>
+                                            <option value="Maheshwaram">Maheshwaram (Pharma & Airport Zone)</option>
+                                            <option value="Sadashivpet">Sadashivpet (Mumbai Highway)</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="grid grid-cols-2 gap-3">
+                                        <div>
+                                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1.5">Plot Category</label>
+                                            <select id="hero-category" class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3.5 py-3 text-sm font-medium text-slate-800 focus:border-brand-600 focus:bg-white focus:outline-none">
+                                                <option value="all">All Types</option>
+                                                <option value="Residential">Residential</option>
+                                                <option value="Commercial">Commercial</option>
+                                                <option value="Agricultural">Farmland / Agri</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1.5">Approval</label>
+                                            <select id="hero-approval" class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3.5 py-3 text-sm font-medium text-slate-800 focus:border-brand-600 focus:bg-white focus:outline-none">
+                                                <option value="all">Any Approved</option>
+                                                <option value="CRDA & RERA">CRDA & RERA</option>
+                                                <option value="HMDA & RERA">HMDA & RERA</option>
+                                                <option value="DTCP & RERA">DTCP & RERA</option>
+                                                <option value="Clear Title Agri">Clear Title Agri</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1.5">Budget Range</label>
+                                        <select id="hero-budget" class="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-800 focus:border-brand-600 focus:bg-white focus:outline-none">
+                                            <option value="all">Any Budget</option>
+                                            <option value="under-25">Under ₹25 Lakhs</option>
+                                            <option value="25-50">₹25 Lakhs – ₹50 Lakhs</option>
+                                            <option value="above-50">₹50 Lakhs & Above</option>
+                                        </select>
+                                    </div>
+
+                                    <button onclick="applyHeroSearch()" class="w-full py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold text-sm shadow-md shadow-brand-600/20 transition flex items-center justify-center">
+                                        <i class="fa-solid fa-magnifying-glass mr-2"></i>
+                                        <span>Search Verified Plots</span>
+                                    </button>
+                                </div>
+
+                                <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                                    <span><i class="fa-solid fa-building-columns text-brand-600 mr-1"></i> Bank Loan Up to 75%</span>
+                                    <span><i class="fa-solid fa-file-signature text-brand-600 mr-1"></i> Spot Registration</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Value Propositions Section -->
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+                <div class="text-center max-w-3xl mx-auto mb-14">
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-600">Why Choose Book A Plot</span>
+                    <h2 class="font-display text-3xl sm:text-4xl font-bold text-slate-900 mt-2">Eliminating Risk From Land Buying</h2>
+                    <p class="text-slate-600 mt-3 text-base">Traditional land purchases are slowed down by middlemen, hidden charges, and unclear titles. We bring complete legal clarity to your screen.</p>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                        <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl mb-5">
+                            <i class="fa-solid fa-scale-balanced"></i>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-slate-900 mb-2">100% Legal Verification</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Every plot undergoes 35-point legal due diligence, verifying 30-year EC, link documents, and CRDA/HMDA/DTCP/RERA approvals.</p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                        <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-xl mb-5">
+                            <i class="fa-solid fa-tags"></i>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-slate-900 mb-2">Zero Hidden Costs</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">See exact per-sq.yd pricing, facing charges, clubhouse fees, and stamp duty estimates upfront before paying a rupee.</p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                        <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-xl mb-5">
+                            <i class="fa-solid fa-compass-drafting"></i>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-slate-900 mb-2">Interactive Plot Maps</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Check live availability, exact plot dimensions, Vaastu facing (East/North), and 40ft/60ft road widths digitally.</p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                        <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-xl mb-5">
+                            <i class="fa-solid fa-handshake-angle"></i>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-slate-900 mb-2">End-to-End Assistance</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">From complimentary chauffeur-driven site visits to bank loan processing and SRO registration, we handle it all.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Plots Preview Section -->
+            <div class="bg-slate-100/80 border-y border-slate-200 py-16 md:py-20">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-widest text-brand-600">Curated Inventory</span>
+                            <h2 class="font-display text-3xl font-bold text-slate-900 mt-1">Featured Verified Plots</h2>
+                        </div>
+                        <button onclick="navigateTo('plots')" class="inline-flex items-center text-sm font-semibold text-brand-700 hover:text-brand-800">
+                            <span>View All Verified Plots</span>
+                            <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+
+                    <div id="featured-plots-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+                        <!-- Dynamically populated by JS -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick How It Works Preview + CTA Banner -->
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+                <div class="bg-gradient-to-br from-brand-800 via-brand-900 to-slate-900 rounded-3xl p-8 sm:p-12 lg:p-16 text-white shadow-xl relative overflow-hidden">
+                    <div class="relative z-10 max-w-3xl">
+                        <span class="px-3 py-1 rounded-full bg-white/10 text-brand-200 text-xs font-semibold uppercase tracking-wider">Ready to Invest?</span>
+                        <h2 class="font-display text-3xl sm:text-4xl font-bold mt-4 leading-tight">Ready to Invest in Land You Can Trust?</h2>
+                        <p class="text-brand-100/90 mt-4 text-base sm:text-lg leading-relaxed">
+                            Join thousands of smart homebuyers and investors securing high-growth plots without middlemen or legal stress. Lock your preferred plot online with a 100% refundable token today.
+                        </p>
+                        <div class="flex flex-wrap gap-4 mt-8">
+                            <button onclick="navigateTo('plots')" class="px-6 py-3.5 rounded-xl bg-white text-brand-900 hover:bg-brand-50 font-bold text-sm shadow-lg transition">
+                                Get Started Now
+                            </button>
+                            <button onclick="navigateTo('contact')" class="px-6 py-3.5 rounded-xl bg-brand-700/60 hover:bg-brand-700 border border-brand-500/40 text-white font-semibold text-sm transition">
+                                Schedule a Free Site Visit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- PAGE 2: VERIFIED PLOTS CATALOG VIEW                       -->
+        <!-- ========================================================= -->
+        <section id="page-plots" class="page-view hidden">
+            <div class="bg-slate-900 text-white py-12">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                        <div>
+                            <nav class="text-xs text-slate-400 mb-2">
+                                <span class="cursor-pointer hover:text-white" onclick="navigateTo('home')">Home</span> / <span class="text-brand-400">Verified Plots</span>
+                            </nav>
+                            <h1 class="font-display text-3xl sm:text-4xl font-bold">100% Legally Verified Plots</h1>
+                            <p class="text-slate-300 text-sm sm:text-base mt-1">Filter by location, approval authority, Vaastu facing, and transparent all-inclusive budget.</p>
+                        </div>
+                        <button onclick="navigateTo('layout-map')" class="self-start md:self-auto px-5 py-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-sm font-semibold transition flex items-center">
+                            <i class="fa-solid fa-map-location-dot mr-2"></i> Switch to Interactive Layout Map
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                <!-- Filter Controls Bar -->
+                <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm mb-8">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Location</label>
+                            <select id="filter-location" onchange="filterPlots()" class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3 py-2.5 text-sm font-medium focus:border-brand-600 focus:outline-none">
+                                <option value="all">All Locations</option>
+                                <option value="Guntur ORR (₹6,000/Sq.Yd)">Guntur ORR (₹6,000/Sq.Yd)</option>
+                                <option value="Amaravati (CRDA)">Amaravati (CRDA)</option>
+                                <option value="Vijayawada-Guntur">Vijayawada-Guntur</option>
+                                <option value="Shadnagar">Shadnagar</option>
+                                <option value="Shankarpally">Shankarpally</option>
+                                <option value="Yadagirigutta">Yadagirigutta</option>
+                                <option value="Maheshwaram">Maheshwaram</option>
+                                <option value="Sadashivpet">Sadashivpet</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Category</label>
+                            <select id="filter-category" onchange="filterPlots()" class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3 py-2.5 text-sm font-medium focus:border-brand-600 focus:outline-none">
+                                <option value="all">All Categories</option>
+                                <option value="Residential">Residential</option>
+                                <option value="Commercial">Commercial</option>
+                                <option value="Agricultural">Agricultural</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Approval Type</label>
+                            <select id="filter-approval" onchange="filterPlots()" class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3 py-2.5 text-sm font-medium focus:border-brand-600 focus:outline-none">
+                                <option value="all">All Approvals</option>
+                                <option value="CRDA & RERA">CRDA & RERA</option>
+                                <option value="HMDA & RERA">HMDA & RERA</option>
+                                <option value="DTCP & RERA">DTCP & RERA</option>
+                                <option value="Clear Title Agri">Clear Title Agri</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Plot Facing</label>
+                            <select id="filter-facing" onchange="filterPlots()" class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3 py-2.5 text-sm font-medium focus:border-brand-600 focus:outline-none">
+                                <option value="all">Any Facing</option>
+                                <option value="East">East Facing</option>
+                                <option value="North">North Facing</option>
+                                <option value="North-East">North-East Corner</option>
+                                <option value="West">West Facing</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Budget</label>
+                            <select id="filter-budget" onchange="filterPlots()" class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3 py-2.5 text-sm font-medium focus:border-brand-600 focus:outline-none">
+                                <option value="all">Any Budget</option>
+                                <option value="under-25">Under ₹25 Lakhs</option>
+                                <option value="25-50">₹25L – ₹50L</option>
+                                <option value="above-50">Above ₹50 Lakhs</option>
+                            </select>
+                        </div>
+
+                        <div class="flex items-end">
+                            <button onclick="resetFilters()" class="w-full py-2.5 px-4 rounded-xl border border-slate-300 hover:bg-slate-100 text-slate-700 text-sm font-semibold transition">
+                                <i class="fa-solid fa-rotate-right mr-1.5"></i> Reset
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500">
+                        <span id="results-counter" class="font-semibold text-slate-700">Showing 6 verified plots</span>
+                        <div class="flex items-center space-x-2">
+                            <span>Sort by:</span>
+                            <select id="sort-plots" onchange="filterPlots()" class="rounded-lg border border-slate-200 px-2.5 py-1 text-slate-700 font-medium focus:outline-none">
+                                <option value="featured">Recommended</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="size-high">Area: Largest First</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plots Grid -->
+                <div id="all-plots-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+                    <!-- Populated via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- PAGE 3: INTERACTIVE DIGITAL LAYOUT MAP VIEW               -->
+        <!-- ========================================================= -->
+        <section id="page-layout-map" class="page-view hidden">
+            <div class="bg-slate-900 text-white py-10">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                        <div>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-brand-500/20 text-brand-300 border border-brand-500/30 mb-2">
+                                <i class="fa-solid fa-satellite-dish mr-1.5"></i> Real-Time Venture Blueprint
+                            </span>
+                            <h1 class="font-display text-2xl sm:text-4xl font-bold">Interactive Digital Layout Map</h1>
+                            <p class="text-slate-300 text-sm mt-1">Click any plot parcel on the master layout below to inspect dimensions, road width, Vaastu facing, and reserve instantly.</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <label class="text-xs text-slate-400">Select Venture:</label>
+                            <select id="venture-selector" onchange="renderInteractiveLayout()" class="rounded-xl bg-slate-800 border border-slate-700 text-white px-4 py-2.5 text-sm font-semibold focus:outline-none focus:border-brand-500">
+                                <option value="amaravati">Amaravati Capital Greens (Amaravati - CRDA)</option>
+                                <option value="emerald">Emerald Meadows (Shadnagar - HMDA)</option>
+                                <option value="silicon">Silicon Enclave (Shankarpally - HMDA)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                <div class="grid lg:grid-cols-12 gap-8 items-start">
+                    <!-- Interactive Blueprint Canvas Area -->
+                    <div class="lg:col-span-8 bg-white rounded-2xl border border-slate-200 shadow-sm p-4 sm:p-6">
+                        <!-- Legend & Compass Header -->
+                        <div class="flex flex-wrap items-center justify-between gap-4 pb-4 mb-5 border-b border-slate-100">
+                            <div class="flex flex-wrap items-center gap-4 text-xs font-semibold">
+                                <span class="flex items-center"><span class="w-3.5 h-3.5 rounded bg-emerald-500 mr-1.5 inline-block"></span> Available</span>
+                                <span class="flex items-center"><span class="w-3.5 h-3.5 rounded bg-amber-400 mr-1.5 inline-block"></span> Corner / Premium</span>
+                                <span class="flex items-center"><span class="w-3.5 h-3.5 rounded bg-blue-600 mr-1.5 inline-block"></span> Reserved by You</span>
+                                <span class="flex items-center"><span class="w-3.5 h-3.5 rounded bg-slate-300 mr-1.5 inline-block"></span> Sold Out</span>
+                            </div>
+                            <div class="flex items-center space-x-2 text-xs font-bold text-slate-600 bg-slate-100 px-3 py-1.5 rounded-lg">
+                                <i class="fa-regular fa-compass text-brand-600 text-base"></i>
+                                <span>NORTH ↑</span>
+                            </div>
+                        </div>
+
+                        <!-- Simulated Master Layout Grid -->
+                        <div class="bg-slate-100 rounded-xl p-4 sm:p-6 border-2 border-dashed border-slate-300 overflow-x-auto">
+                            <div class="min-w-[540px]">
+                                <!-- Top 60ft Highway Banner -->
+                                <div class="bg-slate-800 text-slate-200 text-center py-2 rounded-lg text-xs font-bold tracking-widest uppercase mb-4">
+                                    ◄ 60 FT. MAIN ENTRANCE BLACKTOP ROAD ►
+                                </div>
+
+                                <!-- North Row Plots -->
+                                <div id="layout-row-north" class="grid grid-cols-6 gap-2.5 mb-3">
+                                    <!-- Populated by JS -->
+                                </div>
+
+                                <!-- Internal 40ft Road & Park Spine -->
+                                <div class="grid grid-cols-12 gap-2.5 my-3 items-center">
+                                    <div class="col-span-8 bg-slate-700 text-slate-300 text-center py-2 rounded text-[11px] font-semibold tracking-wider">
+                                        40 FT. INTERNAL AVENUE ROAD (UNDERGROUND ELECTRIFICATION)
+                                    </div>
+                                    <div class="col-span-4 bg-emerald-100 border border-emerald-300 text-emerald-800 text-center py-2 rounded text-[11px] font-bold">
+                                        <i class="fa-solid fa-tree mr-1"></i> LUSH PARK & CLUBHOUSE
+                                    </div>
+                                </div>
+
+                                <!-- South Row Plots -->
+                                <div id="layout-row-south" class="grid grid-cols-6 gap-2.5 mt-3">
+                                    <!-- Populated by JS -->
+                                </div>
+
+                                <!-- Bottom Amenity Strip -->
+                                <div class="mt-4 bg-slate-200 text-slate-600 text-center py-1.5 rounded text-[11px] font-semibold">
+                                    COMPOUND WALL WITH SOLAR FENCING & RAINWATER HARVESTING PERIMETER
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Selected Plot Inspector Panel -->
+                    <div class="lg:col-span-4 bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sticky top-24">
+                        <div id="layout-inspector-content">
+                            <!-- Default / Selected plot details rendered here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- PAGE 4: HOW IT WORKS & LEGAL CHECKLIST VIEW               -->
+        <!-- ========================================================= -->
+        <section id="page-how-it-works" class="page-view hidden">
+            <div class="bg-slate-900 text-white py-14">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-400">Simple 4-Step Process</span>
+                    <h1 class="font-display text-3xl sm:text-5xl font-bold mt-2">From Discovery to Registration in 4 Simple Steps</h1>
+                    <p class="text-slate-300 mt-4 text-base">We’ve digitized every milestone of land acquisition so you can buy with institutional-grade confidence.</p>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                <!-- 4 Steps Timeline -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+                    <div class="relative bg-white rounded-2xl p-7 border border-slate-200 shadow-sm">
+                        <div class="w-10 h-10 rounded-full bg-brand-600 text-white font-display font-bold flex items-center justify-center mb-5">1</div>
+                        <h3 class="font-display text-xl font-bold text-slate-900 mb-2">Discover & Filter</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Search plots by growth corridor, budget, plot area, Vaastu facing, and government approval type (CRDA, HMDA, DTCP, RERA).</p>
+                    </div>
+
+                    <div class="relative bg-white rounded-2xl p-7 border border-slate-200 shadow-sm">
+                        <div class="w-10 h-10 rounded-full bg-brand-600 text-white font-display font-bold flex items-center justify-center mb-5">2</div>
+                        <h3 class="font-display text-xl font-bold text-slate-900 mb-2">Inspect & Verify</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Download legal title opinions online, inspect the digital layout map, or book a complimentary cab for an on-ground site visit.</p>
+                    </div>
+
+                    <div class="relative bg-white rounded-2xl p-7 border border-slate-200 shadow-sm">
+                        <div class="w-10 h-10 rounded-full bg-brand-600 text-white font-display font-bold flex items-center justify-center mb-5">3</div>
+                        <h3 class="font-display text-xl font-bold text-slate-900 mb-2">Reserve Online</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Select your exact plot number on the layout and lock the price for 15 days with a 100% refundable ₹25,000 token.</p>
+                    </div>
+
+                    <div class="relative bg-white rounded-2xl p-7 border border-slate-200 shadow-sm">
+                        <div class="w-10 h-10 rounded-full bg-brand-600 text-white font-display font-bold flex items-center justify-center mb-5">4</div>
+                        <h3 class="font-display text-xl font-bold text-slate-900 mb-2">Register & Own</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Complete bank loan disbursement (if opted) and sign your sale deed at the Sub-Registrar Office with our legal team.</p>
+                    </div>
+                </div>
+
+                <!-- 35-Point Legal Verification Standard -->
+                <div class="bg-white rounded-3xl border border-slate-200 p-8 sm:p-12 shadow-sm">
+                            <button onclick="openLegalModal('CRDA, HMDA & RERA Master Venture')" class="mt-6 px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold transition">
+                                <i class="fa-solid fa-file-shield mr-2 text-brand-400"></i> View Sample Legal Dossier
+                            </button>
+                        </div>
+                        <div class="lg:col-span-7 grid sm:grid-cols-2 gap-4">
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 flex items-start space-x-3">
+                                <i class="fa-solid fa-circle-check text-brand-600 text-lg mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-sm text-slate-900">30-Year Encumbrance (EC)</h4>
+                                    <p class="text-xs text-slate-500 mt-0.5">Verified chain of ownership with zero mortgages or disputes.</p>
+                                </div>
+                            </div>
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 flex items-start space-x-3">
+                                <i class="fa-solid fa-circle-check text-brand-600 text-lg mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-sm text-slate-900">RERA & Authority LP No.</h4>
+                                    <p class="text-xs text-slate-500 mt-0.5">Approved final layout plan from CRDA, HMDA, DTCP, or local body.</p>
+                                </div>
+                            </div>
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 flex items-start space-x-3">
+                                <i class="fa-solid fa-circle-check text-brand-600 text-lg mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-sm text-slate-900">RERA & Authority LP No.</h4>
+                                    <p class="text-xs text-slate-500 mt-0.5">Approved final layout plan from HMDA, DTCP, or local body.</p>
+                                </div>
+                            </div>
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 flex items-start space-x-3">
+                                <i class="fa-solid fa-circle-check text-brand-600 text-lg mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-sm text-slate-900">NALA Land Conversion</h4>
+                                    <p class="text-xs text-slate-500 mt-0.5">Verified agricultural-to-non-agricultural conversion orders.</p>
+                                </div>
+                            </div>
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 flex items-start space-x-3">
+                                <i class="fa-solid fa-circle-check text-brand-600 text-lg mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-sm text-slate-900">Physical Boundary Survey</h4>
+                                    <p class="text-xs text-slate-500 mt-0.5">GPS-tagged boundary stones matching approved cadastre maps.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- PAGE 5: ABOUT US VIEW                                     -->
+        <!-- ========================================================= -->
+        <section id="page-about" class="page-view hidden">
+            <div class="bg-slate-900 text-white py-14">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-400">Our Mission</span>
+                    <h1 class="font-display text-3xl sm:text-5xl font-bold mt-2">Making Land Ownership Safe, Transparent & Accessible.</h1>
+                    <p class="text-slate-300 mt-4 text-base sm:text-lg leading-relaxed">
+                        Book A Plot was founded by real estate attorneys, urban planners, and technologists with one clear goal: to bring stock-market-level transparency to open plot investments.
+                    </p>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                <div class="grid md:grid-cols-3 gap-8 mb-16">
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm text-center">
+                        <div class="font-display text-4xl font-extrabold text-brand-600">₹420 Cr+</div>
+                        <div class="text-sm font-semibold text-slate-800 mt-2">Verified Land Transacted</div>
+                        <p class="text-xs text-slate-500 mt-1">Across residential & commercial layouts</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm text-center">
+                        <div class="font-display text-4xl font-extrabold text-brand-600">2,800+</div>
+                        <div class="text-sm font-semibold text-slate-800 mt-2">Happy Plot Owners</div>
+                        <p class="text-xs text-slate-500 mt-1">Including 650+ NRI investors worldwide</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm text-center">
+                        <div class="font-display text-4xl font-extrabold text-brand-600">100%</div>
+                        <div class="text-sm font-semibold text-slate-800 mt-2">Dispute-Free Track Record</div>
+                        <p class="text-xs text-slate-500 mt-1">Zero litigation across all listed projects</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Accordion Section -->
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="font-display text-2xl sm:text-3xl font-bold text-slate-900 text-center mb-8">Frequently Asked Questions</h2>
+                    <div class="space-y-4">
+                        <details class="group bg-white rounded-2xl border border-slate-200 p-5 cursor-pointer" open>
+                            <summary class="font-bold text-slate-900 flex justify-between items-center list-none">
+                                <span>Is the online reservation token amount 100% refundable?</span>
+                                <i class="fa-solid fa-chevron-down text-slate-400 group-open:rotate-180 transition-transform"></i>
+                            </summary>
+                            <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+                                Yes! When you reserve a plot online with a ₹25,000 token, your plot and price are locked for 15 days. If you choose not to proceed after visiting the site or reviewing the physical legal papers, 100% of the token is refunded to your bank account within 3 working days.
+                            </p>
+                        </details>
+
+                        <details class="group bg-white rounded-2xl border border-slate-200 p-5 cursor-pointer">
+                            <summary class="font-bold text-slate-900 flex justify-between items-center list-none">
+                                <span>Can I get a bank loan for purchasing an open plot?</span>
+                                <i class="fa-solid fa-chevron-down text-slate-400 group-open:rotate-180 transition-transform"></i>
+                            </summary>
+                            <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+                                Absolutely. All our CRDA, HMDA, and DTCP approved residential ventures are pre-approved by leading banks (SBI, HDFC, ICICI, Axis) for up to 75% plot purchase loans.
+                            </p>
+                        </details>
+
+                        <details class="group bg-white rounded-2xl border border-slate-200 p-5 cursor-pointer">
+                            <summary class="font-bold text-slate-900 flex justify-between items-center list-none">
+                                <span>Are there any brokerage charges for buyers?</span>
+                                <i class="fa-solid fa-chevron-down text-slate-400 group-open:rotate-180 transition-transform"></i>
+                            </summary>
+                            <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+                                Zero brokerage. You buy directly at developer-authorized transparent pricing with complete clarity on per-square-yard rates and government registration charges.
+                            </p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- PAGE 6: CONTACT & SCHEDULE SITE VISIT VIEW                -->
+        <!-- ========================================================= -->
+        <section id="page-contact" class="page-view hidden">
+            <div class="bg-slate-900 text-white py-12">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h1 class="font-display text-3xl sm:text-4xl font-bold">Schedule a Free Site Visit or Legal Consultation</h1>
+                    <p class="text-slate-300 text-sm sm:text-base mt-2">Enjoy complimentary doorstep pickup & drop for family site visits, or request a callback from our property advisors.</p>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div class="grid lg:grid-cols-12 gap-10">
+                    <!-- Contact Form -->
+                    <div class="lg:col-span-7 bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm">
+                        <form onsubmit="handleSiteVisitSubmit(event)" class="space-y-4">
+                                <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 uppercase mb-1.5">Full Name *</label>
+                                    <input type="text" id="visit-name" required placeholder="e.g. Karthik Reddy" class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:border-brand-600 focus:outline-none">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 uppercase mb-1.5">Phone / WhatsApp *</label>
+                                    <input type="tel" id="visit-phone" required placeholder="+91 94929 00365" class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:border-brand-600 focus:outline-none">
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 uppercase mb-1.5">Preferred Venture / Location</label>
+                                    <select id="visit-venture" class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:border-brand-600 focus:outline-none">
+                                        <option value="Amaravati Capital Greens - CRDA">Amaravati Capital Greens (CRDA)</option>
+                                        <option value="Capital Gateway Commercial - Vijayawada-Guntur CRDA">Capital Gateway Commercial (Vijayawada-Guntur CRDA)</option>
+                                        <option value="Emerald Meadows - Shadnagar">Emerald Meadows (Shadnagar)</option>
+                                        <option value="Silicon Enclave - Shankarpally">Silicon Enclave (Shankarpally)</option>
+                                        <option value="Temple City Greens - Yadagirigutta">Temple City Greens (Yadagirigutta)</option>
+                                        <option value="Aero Commercial Hub - Maheshwaram">Aero Commercial Hub (Maheshwaram)</option>
+                                        <option value="Not Sure - Need Advisor Help">Not Sure — Help Me Choose</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 uppercase mb-1.5">Preferred Visit Date</label>
+                                    <input type="date" id="visit-date" class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:border-brand-600 focus:outline-none">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 uppercase mb-1.5">Visit Mode</label>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <label class="flex items-center p-3 rounded-xl border border-slate-200 cursor-pointer hover:bg-slate-50">
+                                        <input type="radio" name="visitMode" value="Free Cab Pickup" checked class="text-brand-600 focus:ring-brand-500">
+                                        <span class="ml-2.5 text-sm font-medium text-slate-800"><i class="fa-solid fa-car text-brand-600 mr-1"></i> Free Cab Pickup</span>
+                                    </label>
+                                    <label class="flex items-center p-3 rounded-xl border border-slate-200 cursor-pointer hover:bg-slate-50">
+                                        <input type="radio" name="visitMode" value="Live Video Tour" class="text-brand-600 focus:ring-brand-500">
+                                        <span class="ml-2.5 text-sm font-medium text-slate-800"><i class="fa-solid fa-video text-brand-600 mr-1"></i> Live Video Tour</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 uppercase mb-1.5">Pickup Address / Specific Questions</label>
+                                <textarea id="visit-notes" rows="3" placeholder="Enter your home/office pickup location or questions regarding plot sizes & loans..." class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:border-brand-600 focus:outline-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold text-sm shadow-md transition">
+                                Confirm Free Site Visit
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Office Info -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm">
+                            <h3 class="font-display text-lg font-bold text-slate-900 mb-4">Experience Center & Legal Desk</h3>
+                            <ul class="space-y-4 text-sm text-slate-600">
+                                <li class="flex items-start space-x-3">
+                                    <i class="fa-solid fa-location-dot text-brand-600 text-base mt-1"></i>
+                                    <span>4th Floor, Trendz Trident, Financial District, Hyderabad & Benz Circle, Vijayawada (CRDA Desk)</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <i class="fa-solid fa-phone text-brand-600 text-base"></i>
+                                    <a href="tel:+919492900365" class="font-semibold text-slate-900 hover:text-brand-600 transition">+91 94929 00365</a>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <i class="fa-brands fa-whatsapp text-brand-600 text-base"></i>
+                                    <a href="https://wa.me/919492900365" target="_blank" rel="noopener noreferrer" class="font-semibold text-slate-900 hover:text-brand-600 transition">WhatsApp: +91 94929 00365</a>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <i class="fa-solid fa-envelope text-brand-600 text-base"></i>
+                                    <span>advisors@bookaplot.in</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <i class="fa-solid fa-clock text-brand-600 text-base"></i>
+                                    <span>Mon – Sun: 9:30 AM – 7:30 PM (Site visits open on weekends)</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-brand-50 rounded-2xl border border-brand-200 p-6">
+                            <h4 class="font-display font-bold text-brand-900 flex items-center">
+                                <i class="fa-solid fa-globe mr-2 text-brand-600"></i> Dedicated NRI Desk
+                            </h4>
+                            <p class="text-xs sm:text-sm text-brand-800 mt-2 leading-relaxed">
+                                Buying from the US, UK, UAE, or Australia? We assist with GPA (General Power of Attorney) drafting, FEMA-compliant NRE/NRO payments, and drone video updates.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- PAGE 7: ASSOCIATE REGISTRATION VIEW                       -->
+        <!-- ========================================================= -->
+        <section id="page-associate-register" class="page-view hidden">
+            <div class="bg-slate-900 text-white py-12 border-b border-slate-800">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <span class="inline-flex items-center px-3 py-1 rounded-full bg-amber-500/15 border border-amber-400/30 text-amber-300 text-xs font-bold uppercase tracking-wider mb-2">
+                            <i class="fa-solid fa-crown mr-1.5"></i> Channel Partner & Cadre Onboarding
+                        </span>
+                        <h1 class="font-display text-3xl sm:text-4xl font-bold">Associate Registration</h1>
+                        <p class="text-slate-300 text-sm sm:text-base mt-1">Join India’s fastest-growing CRDA, HMDA & DTCP verified land network with transparent cadre commissions.</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="text-xs text-slate-400">Already registered?</span>
+                        <button onclick="navigateTo('associate-login')" class="px-5 py-2.5 rounded-xl bg-white text-slate-900 hover:bg-slate-100 text-sm font-bold transition">
+                            Associate Login <i class="fa-solid fa-arrow-right ml-1.5"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div class="grid lg:grid-cols-12 gap-8 items-start">
+                    <!-- Registration Form -->
+                    <div class="lg:col-span-7 bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm">
+                        <div class="flex items-center justify-between pb-4 mb-6 border-b border-slate-100">
+                            <div>
+                                <h2 class="font-display text-xl font-bold text-slate-900">Create Your Associate Account</h2>
+                                <p class="text-xs text-slate-500 mt-0.5">Select your Cadre designation and complete KYC details</p>
+                            </div>
+                            <span class="px-2.5 py-1 rounded-lg bg-brand-50 text-brand-700 text-xs font-bold">Instant ID Generation</span>
+                        </div>
+
+                        <form onsubmit="handleAssociateRegister(event)" class="space-y-4">
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 uppercase mb-1.5">Full Legal Name *</label>
+                                    <input type="text" id="reg-name" required placeholder="e.g. Srinivas Rao" class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:border-brand-600 focus:outline-none">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 uppercase mb-1.5">Mobile Number (WhatsApp) *</label>
+                                    <input type="tel" id="reg-phone" required placeholder="e.g. 9492900365" class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:border-brand-600 focus:outline-none">
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 uppercase mb-1.5">Email Address *</label>
+                                    <input type="email" id="reg-email" required placeholder="associate@bookaplot.in" class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:border-brand-600 focus:outline-none">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 uppercase mb-1.5">PAN / Aadhaar KYC Number *</label>
+                                    <input type="text" id="reg-kyc" required placeholder="ABCDE1234F" class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm uppercase focus:border-brand-600 focus:outline-none">
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 uppercase mb-1.5">Select Cadre Designation *</label>
+                                    <select id="reg-cadre" onchange="updateRegCadrePreview()" required class="w-full rounded-xl border border-brand-400 bg-brand-50/40 px-4 py-3 text-sm font-bold text-slate-900 focus:border-brand-600 focus:outline-none">
+                                        <option value="CEO">1. CEO (Chief Executive Officer)</option>
+                                        <option value="Executive Director">2. Executive Director</option>
+                                        <option value="Senior Director">3. Senior Director</option>
+                                        <option value="Director">4. Director</option>
+                                        <option value="General Manager">5. General Manager</option>
+                                        <option value="Deputy General Manager">6. Deputy General Manager</option>
+                                        <option value="Assistant General Manager">7. Assistant General Manager</option>
+                                        <option value="Marketing Manager">8. Marketing Manager</option>
+                                        <option value="Assistant Manager">9. Assistant Manager</option>
+                                        <option value="Associate" selected>10. Associate</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 uppercase mb-1.5">Operating City / Corridor *</label>
+                                    <select id="reg-city" required class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm font-medium text-slate-800 focus:border-brand-600 focus:outline-none">
+                                        <option value="Guntur & Amaravati (CRDA)">Guntur & Amaravati (CRDA)</option>
+                                        <option value="Vijayawada (CRDA)">Vijayawada (CRDA)</option>
+                                        <option value="Hyderabad (HMDA / DTCP)">Hyderabad (HMDA / DTCP)</option>
+                                        <option value="NRI / International Desk">NRI / International Desk</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 uppercase mb-1.5">Sponsor / Upline Associate ID</label>
+                                    <input type="text" id="reg-sponsor" value="BAP-CEO-001" placeholder="e.g. BAP-DIR-104" class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm uppercase focus:border-brand-600 focus:outline-none">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 uppercase mb-1.5">Create Portal Password *</label>
+                                    <input type="password" id="reg-password" required placeholder="Min 6 characters" class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:border-brand-600 focus:outline-none">
+                                </div>
+                            </div>
+
+                            <!-- Live Selected Cadre Slab Preview -->
+                            <div id="reg-cadre-preview" class="p-4 rounded-2xl bg-slate-900 text-white flex flex-wrap items-center justify-between gap-3">
+                                <!-- Populated via JS -->
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-lg shadow-brand-600/25 transition flex items-center justify-center">
+                                <i class="fa-solid fa-id-badge mr-2"></i> Complete Registration & Open Dashboard
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Right Column: 10-Level Cadre Structure Guide -->
+                    <div class="lg:col-span-5 bg-white rounded-3xl border border-slate-200 p-6 shadow-sm">
+                        <h3 class="font-display text-lg font-bold text-slate-900 mb-1">10-Level Cadre Hierarchy & Slabs</h3>
+                        <p class="text-xs text-slate-500 mb-4">Transparent promotion & commission structure across CRDA, HMDA & DTCP ventures.</p>
+                        <div id="reg-cadre-list" class="space-y-2 max-h-[500px] overflow-y-auto pr-1">
+                            <!-- Populated by JS -->
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-slate-100 text-xs text-slate-500 flex items-center justify-between">
+                            <span>Need Cadre Support?</span>
+                            <a href="tel:+919492900365" class="font-bold text-brand-700 hover:underline"><i class="fa-solid fa-phone mr-1"></i> +91 94929 00365</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- PAGE 8: ASSOCIATE LOGIN VIEW                              -->
+        <!-- ========================================================= -->
+        <section id="page-associate-login" class="page-view hidden">
+            <div class="min-h-[80vh] bg-slate-100 py-12 px-4 sm:px-6 lg:px-8 flex items-center justify-center">
+                <div class="max-w-4xl w-full grid md:grid-cols-12 bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden">
+                    <!-- Left Dark Brand Panel -->
+                    <div class="md:col-span-5 bg-slate-900 text-white p-8 flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-2xl bg-brand-600 flex items-center justify-center text-white text-xl mb-6">
+                                <i class="fa-solid fa-sitemap"></i>
+                            </div>
+                            <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Partner CRM & Genealogy</span>
+                            <h2 class="font-display text-2xl sm:text-3xl font-bold mt-2 leading-tight">Book A Plot Associate Portal</h2>
+                            <p class="text-xs sm:text-sm text-slate-300 mt-3 leading-relaxed">
+                                Track your personal plot sales, downline cadre team performance, CRDA/HMDA layout inventory, and instant payout ledgers.
+                            </p>
+                        </div>
+
+                        <div class="mt-8 pt-6 border-t border-slate-800 space-y-2 text-xs text-slate-400">
+                            <div class="flex items-center"><i class="fa-solid fa-check text-brand-400 mr-2"></i> Real-Time Plot Booking Attribution</div>
+                            <div class="flex items-center"><i class="fa-solid fa-check text-brand-400 mr-2"></i> 10-Tier Cadre Commission Tracking</div>
+                            <div class="flex items-center"><i class="fa-solid fa-phone text-amber-400 mr-2"></i> Desk: +91 94929 00365</div>
+                        </div>
+                    </div>
+
+                    <!-- Right Login Form & Instant Cadre Demo Buttons -->
+                    <div class="md:col-span-7 p-8 sm:p-10">
+                        <h3 class="font-display text-2xl font-bold text-slate-900">Associate Sign In</h3>
+                        <p class="text-xs text-slate-500 mt-1">Enter your Associate ID or registered mobile number</p>
+
+                        <form onsubmit="handleAssociateLogin(event)" class="space-y-4 mt-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 uppercase mb-1.5">Associate ID or Mobile Number *</label>
+                                <input type="text" id="login-id" required placeholder="e.g. BAP-CEO-001 or 9492900365" class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:border-brand-600 focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 uppercase mb-1.5">Password *</label>
+                                <input type="password" id="login-password" required placeholder="••••••••" class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:border-brand-600 focus:outline-none">
+                            </div>
+
+                            <button type="submit" class="w-full py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-md transition">
+                                Login to Associate Dashboard
+                            </button>
+                        </form>
+
+                        <!-- Quick 1-Click Demo Logins for Cadres -->
+                        <div class="mt-6 pt-5 border-t border-slate-100">
+                            <span class="block text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-2.5">Quick 1-Click Cadre Demo Login:</span>
+                            <div class="grid grid-cols-2 gap-2">
+                                <button onclick="demoLoginCadre('CEO')" class="px-3 py-2 rounded-xl border border-amber-300 bg-amber-50 hover:bg-amber-100 text-amber-900 text-xs font-bold text-left transition flex items-center justify-between">
+                                    <span><i class="fa-solid fa-crown text-amber-600 mr-1.5"></i> CEO Login</span>
+                                    <span class="text-[10px] opacity-75">12%</span>
+                                </button>
+                                <button onclick="demoLoginCadre('Director')" class="px-3 py-2 rounded-xl border border-purple-200 bg-purple-50 hover:bg-purple-100 text-purple-900 text-xs font-bold text-left transition flex items-center justify-between">
+                                    <span><i class="fa-solid fa-user-shield text-purple-600 mr-1.5"></i> Director</span>
+                                    <span class="text-[10px] opacity-75">9.5%</span>
+                                </button>
+                                <button onclick="demoLoginCadre('Marketing Manager')" class="px-3 py-2 rounded-xl border border-blue-200 bg-blue-50 hover:bg-blue-100 text-blue-900 text-xs font-bold text-left transition flex items-center justify-between">
+                                    <span><i class="fa-solid fa-briefcase text-blue-600 mr-1.5"></i> Mktg. Manager</span>
+                                    <span class="text-[10px] opacity-75">6.5%</span>
+                                </button>
+                                <button onclick="demoLoginCadre('Associate')" class="px-3 py-2 rounded-xl border border-emerald-200 bg-emerald-50 hover:bg-emerald-100 text-emerald-900 text-xs font-bold text-left transition flex items-center justify-between">
+                                    <span><i class="fa-solid fa-user-tie text-emerald-600 mr-1.5"></i> Associate</span>
+                                    <span class="text-[10px] opacity-75">5.0%</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 text-center text-xs text-slate-600">
+                            New to Book A Plot? 
+                            <button onclick="navigateTo('associate-register')" class="font-bold text-brand-700 hover:underline ml-1">Register as an Associate →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- PAGE 9: ASSOCIATE DASHBOARD VIEW (CADRE-WISE)             -->
+        <!-- ========================================================= -->
+        <section id="page-associate-dashboard" class="page-view hidden">
+            <!-- Dashboard Top Banner -->
+            <div class="bg-slate-900 text-white py-8 border-b border-slate-800">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+                        <div class="flex items-start sm:items-center space-x-4">
+                            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-400 to-brand-600 flex items-center justify-center text-slate-950 font-display font-extrabold text-2xl shadow-lg shrink-0" id="dash-avatar">
+                                SR
+                            </div>
+                            <div>
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <span id="dash-id-badge" class="px-2.5 py-0.5 rounded-md bg-slate-800 border border-slate-700 text-brand-400 text-xs font-mono font-bold">BAP-CEO-001</span>
+                                    <span id="dash-cadre-badge" class="px-3 py-0.5 rounded-full bg-amber-400 text-slate-950 text-xs font-extrabold uppercase tracking-wide">
+                                        <i class="fa-solid fa-crown mr-1"></i> CEO
+                                    </span>
+                                    <span id="dash-slab-badge" class="px-2.5 py-0.5 rounded-md bg-emerald-500/20 text-emerald-300 text-xs font-semibold">
+                                        Commission Slab: 12.0%
+                                    </span>
+                                </div>
+                                <h1 class="font-display text-2xl sm:text-3xl font-bold mt-1.5" id="dash-name">Welcome, Associate</h1>
+                                <p class="text-xs sm:text-sm text-slate-400 mt-0.5">
+                                    <span id="dash-city">Guntur & Amaravati (CRDA)</span> • Sponsor: <span id="dash-sponsor" class="text-slate-200 font-semibold">HEAD-OFFICE</span> • Support: <a href="tel:+919492900365" class="text-brand-400 hover:underline">+91 94929 00365</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap items-center gap-3">
+                            <button onclick="copyReferralLink()" class="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs sm:text-sm font-semibold text-white transition">
+                                <i class="fa-solid fa-share-nodes text-brand-400 mr-1.5"></i> Copy Referral Link
+                            </button>
+                            <button onclick="logoutAssociate()" class="px-4 py-2.5 rounded-xl bg-red-500/15 hover:bg-red-500/25 border border-red-500/30 text-red-300 text-xs sm:text-sm font-semibold transition">
+                                <i class="fa-solid fa-right-from-bracket mr-1.5"></i> Logout
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+                <!-- KPI Summary Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm">
+                        <div class="flex items-center justify-between text-xs font-semibold text-slate-500 uppercase">
+                            <span>Personal Plot Sales</span>
+                            <span class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center"><i class="fa-solid fa-ruler-combined"></i></span>
+                        </div>
+                        <div class="font-display text-2xl sm:text-3xl font-extrabold text-slate-900 mt-3" id="kpi-personal-sqyds">1,200 Sq.Yds</div>
+                        <p class="text-xs text-emerald-600 font-semibold mt-1" id="kpi-personal-plots">6 Verified Plots Sold</p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm">
+                        <div class="flex items-center justify-between text-xs font-semibold text-slate-500 uppercase">
+                            <span>Cadre Team Volume</span>
+                            <span class="w-8 h-8 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center"><i class="fa-solid fa-users-line"></i></span>
+                        </div>
+                        <div class="font-display text-2xl sm:text-3xl font-extrabold text-slate-900 mt-3" id="kpi-team-volume">₹4.85 Cr</div>
+                        <p class="text-xs text-blue-600 font-semibold mt-1" id="kpi-team-count">28 Active Downline Members</p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm">
+                        <div class="flex items-center justify-between text-xs font-semibold text-slate-500 uppercase">
+                            <span>Earned Commission</span>
+                            <span class="w-8 h-8 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center"><i class="fa-solid fa-indian-rupee-sign"></i></span>
+                        </div>
+                        <div class="font-display text-2xl sm:text-3xl font-extrabold text-brand-700 mt-3" id="kpi-earned-comm">₹8,64,000</div>
+                        <p class="text-xs text-slate-500 mt-1">Direct + Cadre Override Income</p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm">
+                        <div class="flex items-center justify-between text-xs font-semibold text-slate-500 uppercase">
+                            <span>Pending Payout</span>
+                            <span class="w-8 h-8 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center"><i class="fa-solid fa-wallet"></i></span>
+                        </div>
+                        <div class="font-display text-2xl sm:text-3xl font-extrabold text-slate-900 mt-3" id="kpi-pending-comm">₹1,45,000</div>
+                        <p class="text-xs text-purple-600 font-semibold mt-1">Next Release: Every Friday</p>
+                    </div>
+                </div>
+
+                <!-- 10-Level Cadre Hierarchy & Progression Ladder -->
+                <div class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-widest text-brand-600">Rank & Override Architecture</span>
+                            <h2 class="font-display text-xl sm:text-2xl font-bold text-slate-900 mt-0.5">Cadre-Wise Hierarchy (CEO to Associate)</h2>
+                        </div>
+                        <span class="text-xs bg-slate-100 text-slate-700 px-3 py-1.5 rounded-lg font-semibold">
+                            Your Active Rank is Highlighted
+                        </span>
+                    </div>
+
+                    <div id="dashboard-cadre-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5">
+                        <!-- Rendered dynamically with all 10 cadres -->
+                    </div>
+                </div>
+
+                <!-- Middle Row: Register Client Plot Booking + Payout Ledger -->
+                <div class="grid lg:grid-cols-12 gap-8">
+                    <!-- Quick Client Plot Booking Form under Associate ID -->
+                    <div class="lg:col-span-5 bg-white rounded-3xl border border-slate-200 p-6 shadow-sm">
+                        <h3 class="font-display text-lg font-bold text-slate-900 flex items-center">
+                            <i class="fa-solid fa-file-signature text-brand-600 mr-2"></i> Register Client Plot Booking
+                        </h3>
+                        <p class="text-xs text-slate-500 mt-1 mb-4">Log a new plot reservation or site visit directly under your Associate ID to credit your cadre volume.</p>
+
+                        <form onsubmit="handleAssociateClientBooking(event)" class="space-y-3.5">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 uppercase mb-1">Client Full Name *</label>
+                                <input type="text" id="assoc-client-name" required placeholder="e.g. Dr. Ramesh Babu" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:border-brand-600 focus:outline-none">
+                            </div>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 uppercase mb-1">Client Phone *</label>
+                                    <input type="tel" id="assoc-client-phone" required placeholder="98480XXXXX" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:border-brand-600 focus:outline-none">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 uppercase mb-1">Plot Area (Sq.Yds) *</label>
+                                    <input type="number" id="assoc-client-sqyds" required min="100" value="150" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:border-brand-600 focus:outline-none">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 uppercase mb-1">Select Venture *</label>
+                                <select id="assoc-client-venture" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm font-medium focus:border-brand-600 focus:outline-none">
+                                    <option value="Guntur ORR Greens (CRDA - ₹6,000/Sq.Yd)|6000">Guntur ORR Greens (CRDA - ₹6,000/Sq.Yd)</option>
+                                    <option value="Amaravati Capital Greens (CRDA - ₹22,500/Sq.Yd)|22500">Amaravati Capital Greens (CRDA - ₹22,500/Sq.Yd)</option>
+                                    <option value="Capital Gateway Commercial (CRDA - ₹29,500/Sq.Yd)|29500">Capital Gateway Commercial (CRDA - ₹29,500/Sq.Yd)</option>
+                                    <option value="Emerald Meadows Shadnagar (HMDA - ₹18,000/Sq.Yd)|18000">Emerald Meadows Shadnagar (HMDA - ₹18,000/Sq.Yd)</option>
+                                    <option value="Silicon Enclave Shankarpally (HMDA - ₹28,000/Sq.Yd)|28000">Silicon Enclave Shankarpally (HMDA - ₹28,000/Sq.Yd)</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="w-full py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-sm transition">
+                                Submit Plot Booking & Update Commission
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Recent Commission & Payout Ledger -->
+                    <div class="lg:col-span-7 bg-white rounded-3xl border border-slate-200 p-6 shadow-sm">
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <h3 class="font-display text-lg font-bold text-slate-900">Commission & Payout Ledger</h3>
+                                <p class="text-xs text-slate-500">Live attribution from personal & cadre team plot registrations</p>
+                            </div>
+                            <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-bold">TDS Compliant</span>
+                        </div>
+
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left border-collapse">
+                                <thead>
+                                    <tr class="border-b border-slate-200 text-[11px] font-bold uppercase text-slate-400">
+                                        <th class="py-2.5 pr-3">Date / Ref</th>
+                                        <th class="py-2.5 px-3">Client & Venture</th>
+                                        <th class="py-2.5 px-3">Sq.Yds</th>
+                                        <th class="py-2.5 px-3">Commission</th>
+                                        <th class="py-2.5 pl-3 text-right">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="commission-ledger-body" class="divide-y divide-slate-100 text-xs sm:text-sm">
+                                    <!-- Populated via JS -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Downline Team & Cadre-Wise Genealogy Table -->
+                <div class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+                        <div>
+                            <h3 class="font-display text-xl font-bold text-slate-900">Cadre-Wise Team & Downline Directory</h3>
+                            <p class="text-xs text-slate-500 mt-0.5">Filter organization members across all 10 cadres from CEO to Associate</p>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <label class="text-xs font-semibold text-slate-500">Filter by Cadre:</label>
+                            <select id="team-cadre-filter" onchange="renderDownlineTable()" class="rounded-xl border border-slate-300 bg-slate-50 px-3.5 py-2 text-xs sm:text-sm font-semibold text-slate-800 focus:border-brand-600 focus:outline-none">
+                                <option value="all">All 10 Cadres</option>
+                                <option value="CEO">CEO</option>
+                                <option value="Executive Director">Executive Director</option>
+                                <option value="Senior Director">Senior Director</option>
+                                <option value="Director">Director</option>
+                                <option value="General Manager">General Manager</option>
+                                <option value="Deputy General Manager">Deputy General Manager</option>
+                                <option value="Assistant General Manager">Assistant General Manager</option>
+                                <option value="Marketing Manager">Marketing Manager</option>
+                                <option value="Assistant Manager">Assistant Manager</option>
+                                <option value="Associate">Associate</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="bg-slate-50 border-y border-slate-200 text-[11px] font-bold uppercase text-slate-500">
+                                    <th class="py-3 px-4">Associate ID</th>
+                                    <th class="py-3 px-4">Member Name</th>
+                                    <th class="py-3 px-4">Cadre Rank</th>
+                                    <th class="py-3 px-4">Corridor</th>
+                                    <th class="py-3 px-4">Plots Sold</th>
+                                    <th class="py-3 px-4">Business Volume</th>
+                                    <th class="py-3 px-4 text-right">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="downline-table-body" class="divide-y divide-slate-100 text-xs sm:text-sm">
+                                <!-- Populated via JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========================================================= -->
+    <!-- FOOTER                                                    -->
+    <!-- ========================================================= -->
+    <footer class="bg-slate-950 text-slate-400 border-t border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div>
+                    <div class="flex items-center text-white mb-4">
+                        <div class="w-9 h-9 rounded-lg bg-brand-600 flex items-center justify-center text-white mr-2.5">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </div>
+                        <span class="font-display font-extrabold text-xl">Book A <span class="text-brand-500">Plot</span></span>
+                    </div>
+                    <p class="text-sm leading-relaxed text-slate-400">
+                        Verified Land. Transparent Deals. Zero Hassle. India’s trusted digital platform for legally vetted residential, commercial, and farmland plots.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Quick Navigation</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><button onclick="navigateTo('home')" class="hover:text-brand-400 transition">Home</button></li>
+                        <li><button onclick="navigateTo('plots')" class="hover:text-brand-400 transition">Verified Plots</button></li>
+                        <li><button onclick="navigateTo('layout-map')" class="hover:text-brand-400 transition">Interactive Layout Map</button></li>
+                        <li><button onclick="navigateTo('associate-register')" class="hover:text-amber-400 text-amber-300 font-semibold transition">Associate Registration (10 Cadres)</button></li>
+                        <li><button onclick="navigateTo('associate-login')" class="hover:text-brand-400 transition">Associate Login & Dashboard</button></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Approved Corridors</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><button onclick="quickFilterLocation('Guntur ORR (₹6,000/Sq.Yd)')" class="hover:text-brand-400 transition">Guntur ORR Plots (₹6,000/Sq.Yd)</button></li>
+                        <li><button onclick="quickFilterLocation('Amaravati (CRDA)')" class="hover:text-brand-400 transition">CRDA Plots in Amaravati</button></li>
+                        <li><button onclick="quickFilterLocation('Vijayawada-Guntur')" class="hover:text-brand-400 transition">CRDA Plots in Vijayawada-Guntur</button></li>
+                        <li><button onclick="quickFilterLocation('Shadnagar')" class="hover:text-brand-400 transition">HMDA Plots in Shadnagar</button></li>
+                        <li><button onclick="quickFilterLocation('Shankarpally')" class="hover:text-brand-400 transition">Villa Plots in Shankarpally</button></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Approved Corridors</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><button onclick="quickFilterLocation('Amaravati (CRDA)')" class="hover:text-brand-400 transition">CRDA Plots in Amaravati</button></li>
+                        <li><button onclick="quickFilterLocation('Vijayawada-Guntur')" class="hover:text-brand-400 transition">CRDA Plots in Vijayawada-Guntur</button></li>
+                        <li><button onclick="quickFilterLocation('Shadnagar')" class="hover:text-brand-400 transition">HMDA Plots in Shadnagar</button></li>
+                        <li><button onclick="quickFilterLocation('Shankarpally')" class="hover:text-brand-400 transition">Villa Plots in Shankarpally</button></li>
+                        <li><button onclick="quickFilterLocation('Yadagirigutta')" class="hover:text-brand-400 transition">DTCP Plots in Yadagirigutta</button></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">SEO Tags & Assurance</h4>
+                    <div class="flex flex-wrap gap-1.5 text-xs">
+                        <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800">#CRDAPlots</span>
+                        <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800">#AmaravatiPlots</span>
+                        <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800">#VerifiedPlots</span>
+                        <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800">#RERAPlots</span>
+                        <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800">#HMDA</span>
+                        <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800">#DTCPApproved</span>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-800/80 text-xs">
+                        <a href="tel:+919492900365" class="text-brand-400 hover:text-brand-300 font-semibold">
+                            <i class="fa-solid fa-phone mr-1.5"></i> Call / WhatsApp: +91 94929 00365
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800/80 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>© 2026 Book A Plot Realty Technologies Pvt. Ltd. All rights reserved.</p>
+                <p>RERA Registered Real Estate Platform | Clear Title Guarantee</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================================= -->
+    <!-- MODAL 1: PLOT RESERVATION & TOKEN BOOKING MODAL           -->
+    <!-- ========================================================= -->
+    <div id="booking-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/70 backdrop-blur-sm p-4 overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-slate-200 relative my-8">
+            <button onclick="closeBookingModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-600">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="inline-flex items-center px-3 py-1 rounded-full bg-brand-50 text-brand-700 text-xs font-bold mb-3">
+                <i class="fa-solid fa-lock mr-1.5"></i> 15-Day Price Lock & 100% Refundable
+            </div>
+            <h3 class="font-display text-2xl font-bold text-slate-900" id="modal-plot-title">Reserve Plot</h3>
+            <p class="text-xs text-slate-500 mt-1" id="modal-plot-subtitle">Venture & Approval Details</p>
+
+            <!-- Price Breakdown Box -->
+            <div class="bg-slate-50 rounded-2xl p-4 my-5 border border-slate-200 space-y-2 text-sm">
+                <div class="flex justify-between">
+                    <span class="text-slate-600">Plot Area & Facing:</span>
+                    <span class="font-semibold text-slate-900" id="modal-plot-specs">200 Sq. Yds • East</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-600">Total All-Inclusive Value:</span>
+                    <span class="font-bold text-slate-900" id="modal-plot-total">₹36,00,000</span>
+                </div>
+                <div class="border-t border-slate-200 pt-2 flex justify-between items-center">
+                    <span class="font-semibold text-brand-800">Refundable Booking Token:</span>
+                    <span class="font-display text-lg font-extrabold text-brand-600">₹25,000</span>
+                </div>
+            </div>
+
+            <form onsubmit="confirmPlotReservation(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-600 uppercase mb-1">Buyer Full Name (As per Aadhaar/PAN) *</label>
+                    <input type="text" id="booking-buyer-name" required placeholder="Enter full legal name" class="w-full rounded-xl border border-slate-300 px-4 py-2.5 text-sm focus:border-brand-600 focus:outline-none">
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-600 uppercase mb-1">Mobile Number *</label>
+                        <input type="tel" id="booking-buyer-phone" required placeholder="+91 94929 00365" class="w-full rounded-xl border border-slate-300 px-4 py-2.5 text-sm focus:border-brand-600 focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-600 uppercase mb-1">Email Address *</label>
+                        <input type="email" id="booking-buyer-email" required placeholder="you@example.com" class="w-full rounded-xl border border-slate-300 px-4 py-2.5 text-sm focus:border-brand-600 focus:outline-none">
+                    </div>
+                </div>
+
+                <div class="text-xs text-slate-500 bg-amber-50 border border-amber-200 rounded-xl p-3">
+                    <i class="fa-solid fa-circle-info text-amber-600 mr-1"></i>
+                    No payment gateway charge in demo mode. Clicking below generates your instant Reservation Certificate & locks the plot on the layout map.
+                </div>
+
+                <button type="submit" class="w-full py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-lg shadow-brand-600/25 transition">
+                    Lock Plot with ₹25,000 Refundable Token
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- MODAL 2: LEGAL DOCUMENT VERIFICATION DOSSIER MODAL        -->
+    <!-- ========================================================= -->
+    <div id="legal-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/70 backdrop-blur-sm p-4 overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-xl w-full p-6 sm:p-8 shadow-2xl border border-slate-200 relative my-8">
+            <button onclick="closeLegalModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-600">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="flex items-center space-x-3 mb-4">
+                <div class="w-11 h-11 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-file-contract"></i>
+                </div>
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Verified Legal Dossier</span>
+                    <h3 class="font-display text-xl font-bold text-slate-900" id="legal-modal-title">Venture Legal Clearance</h3>
+                </div>
+            </div>
+
+            <div class="space-y-3 my-5 text-sm">
+                <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-between">
+                    <div>
+                        <div class="font-bold text-slate-900">1. RERA Registration Certificate</div>
+                        <div class="text-xs text-slate-500">Reg No: P02400007892 • Status: Active & Valid</div>
+                    </div>
+                    <span class="px-2.5 py-1 rounded-lg bg-emerald-100 text-emerald-800 text-xs font-bold">VERIFIED</span>
+                </div>
+                <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-between">
+                    <div>
+                        <div class="font-bold text-slate-900">2. Final Layout Approval (LP No.)</div>
+                        <div class="text-xs text-slate-500">Approved 40ft & 60ft Roads, 10% Open Park Space</div>
+                    </div>
+                    <span class="px-2.5 py-1 rounded-lg bg-emerald-100 text-emerald-800 text-xs font-bold">VERIFIED</span>
+                </div>
+                <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-between">
+                    <div>
+                        <div class="font-bold text-slate-900">3. 30-Year Encumbrance Certificate (EC)</div>
+                        <div class="text-xs text-slate-500">Zero Litigations, Clear Marketable Mother Deed</div>
+                    </div>
+                    <span class="px-2.5 py-1 rounded-lg bg-emerald-100 text-emerald-800 text-xs font-bold">VERIFIED</span>
+                </div>
+                <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-between">
+                    <div>
+                        <div class="font-bold text-slate-900">4. Bank APF (Approved Project Financial)</div>
+                        <div class="text-xs text-slate-500">Pre-vetted by SBI, HDFC & ICICI Legal Panels</div>
+                    </div>
+                    <span class="px-2.5 py-1 rounded-lg bg-emerald-100 text-emerald-800 text-xs font-bold">APPROVED</span>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3">
+                <button onclick="showToast('Legal Title Opinion PDF summary copied & ready for advisor dispatch!'); closeLegalModal();" class="flex-1 py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold text-sm transition">
+                    <i class="fa-solid fa-download mr-1.5"></i> Request Full PDF Pack
+                </button>
+                <button onclick="closeLegalModal()" class="py-3 px-5 rounded-xl border border-slate-300 hover:bg-slate-50 text-slate-700 font-semibold text-sm transition">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- MODAL 3: SAVED & RESERVED PLOTS DRAWER / MODAL            -->
+    <!-- ========================================================= -->
+    <div id="my-bookings-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/70 backdrop-blur-sm p-4 overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-slate-200 relative my-8">
+            <button onclick="closeMyBookingsModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-600">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 class="font-display text-xl font-bold text-slate-900">Your Reserved & Shortlisted Plots</h3>
+            <p class="text-xs text-slate-500 mt-1">Manage your token reservations and shortlisted land parcels.</p>
+
+            <div id="my-bookings-list" class="my-5 space-y-3 max-h-80 overflow-y-auto">
+                <!-- Populated dynamically -->
+            </div>
+
+            <button onclick="closeMyBookingsModal()" class="w-full py-3 rounded-xl bg-slate-900 text-white font-semibold text-sm">Done</button>
+        </div>
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- CUSTOM TOAST NOTIFICATION BANNER (NO ALERT() USED)        -->
+    <!-- ========================================================= -->
+    <div id="toast-container" class="fixed bottom-5 right-5 z-50 max-w-sm w-full pointer-events-none px-4 sm:px-0"></div>
+
+    <!-- ========================================================= -->
+    <!-- APPLICATION JAVASCRIPT                                    -->
+    <!-- ========================================================= -->
+    <script>
+        // 1. VERIFIED PLOTS DATASET
+        const plotsData = [
+            {
+                id: 'PLT-099',
+                title: 'Guntur ORR Greens — Budget Plot #15',
+                venture: 'Guntur ORR Greens',
+                location: 'Guntur ORR (₹6,000/Sq.Yd)',
+                landmark: '300m from Proposed Amaravati ORR & Eenadu Belt, Guntur',
+                category: 'Residential',
+                approval: 'CRDA & RERA',
+                reraNo: 'P07240016210',
+                areaSqYds: 150,
+                dimensions: '27ft x 50ft',
+                facing: 'East',
+                roadWidth: '40ft Blacktop',
+                pricePerSqYd: 6000,
+                totalPriceLakhs: 9.0,
+                image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80',
+                featured: true,
+                highlights: ['₹6,000/Sq.Yd Launch', 'CRDA LP Approved', 'Spot Registration']
+            },
+            {
+                id: 'PLT-100',
+                title: 'Amaravati Capital Greens — Plot #24',
+                venture: 'Amaravati Capital Greens',
+                location: 'Amaravati (CRDA)',
+                landmark: 'Near Seed Access Road & Capital Spine, Amaravati',
+                category: 'Residential',
+                approval: 'CRDA & RERA',
+                reraNo: 'P07240018421',
+                areaSqYds: 240,
+                dimensions: '36ft x 60ft',
+                facing: 'East',
+                roadWidth: '40ft Blacktop',
+                pricePerSqYd: 22500,
+                totalPriceLakhs: 54.0,
+                image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80',
+                featured: true,
+                highlights: ['CRDA LP Approved', 'Capital Corridor', 'Spot Registration']
+            },
+            {
+                id: 'PLT-101',
+                title: 'Emerald Meadows — Corner Plot #18',
+                venture: 'Emerald Meadows',
+                location: 'Shadnagar',
+                landmark: '4 mins from NH-44 & Proposed Regional Ring Road',
+                category: 'Residential',
+                approval: 'HMDA & RERA',
+                reraNo: 'P02400006112',
+                areaSqYds: 200,
+                dimensions: '30ft x 60ft',
+                facing: 'North-East',
+                roadWidth: '40ft Blacktop',
+                pricePerSqYd: 18000,
+                totalPriceLakhs: 36.0,
+                image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80',
+                featured: true,
+                highlights: ['HMDA Final LP', 'Avenue Plantation', 'Bank Loan Ready']
+            },
+            {
+                id: 'PLT-102',
+                title: 'Silicon Enclave — Villa Plot #42',
+                venture: 'Silicon Enclave',
+                location: 'Shankarpally',
+                landmark: '12 mins from Financial District & IT Corridor',
+                category: 'Residential',
+                approval: 'HMDA & RERA',
+                reraNo: 'P02400007450',
+                areaSqYds: 267,
+                dimensions: '40ft x 60ft',
+                facing: 'North',
+                roadWidth: '60ft Main Road',
+                pricePerSqYd: 28000,
+                totalPriceLakhs: 74.76,
+                image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80',
+                featured: true,
+                highlights: ['Gated Villa Layout', 'Clubhouse Access', 'Clear Title']
+            },
+            {
+                id: 'PLT-103',
+                title: 'Capital Gateway Commercial — Unit #07',
+                venture: 'Capital Gateway Commercial',
+                location: 'Vijayawada-Guntur',
+                landmark: 'Direct Highway Frontage on NH-16 Corridor',
+                category: 'Commercial',
+                approval: 'CRDA & RERA',
+                reraNo: 'P07240019004',
+                areaSqYds: 300,
+                dimensions: '45ft x 60ft',
+                facing: 'East',
+                roadWidth: '60ft Highway Service Road',
+                pricePerSqYd: 29500,
+                totalPriceLakhs: 88.5,
+                image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80',
+                featured: false,
+                highlights: ['Commercial Zone', 'High Footfall', 'CRDA Verified']
+            },
+            {
+                id: 'PLT-104',
+                title: 'Temple City Greens — Plot #12',
+                venture: 'Temple City Greens',
+                location: 'Yadagirigutta',
+                landmark: 'Near Warangal Highway & Temple Development Belt',
+                category: 'Residential',
+                approval: 'DTCP & RERA',
+                reraNo: 'P02000005819',
+                areaSqYds: 167,
+                dimensions: '25ft x 60ft',
+                facing: 'East',
+                roadWidth: '33ft CC Road',
+                pricePerSqYd: 11500,
+                totalPriceLakhs: 19.2,
+                image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
+                featured: false,
+                highlights: ['Budget Friendly', 'DTCP Approved', 'Quick Registration']
+            },
+            {
+                id: 'PLT-105',
+                title: 'Aero Commercial Hub — Plot #09',
+                venture: 'Aero Commercial Hub',
+                location: 'Maheshwaram',
+                landmark: 'Close to Airport Cargo & Pharma SEZ Belt',
+                category: 'Commercial',
+                approval: 'HMDA & RERA',
+                reraNo: 'P02400008102',
+                areaSqYds: 250,
+                dimensions: '37.5ft x 60ft',
+                facing: 'North',
+                roadWidth: '40ft Blacktop',
+                pricePerSqYd: 21000,
+                totalPriceLakhs: 52.5,
+                image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80',
+                featured: false,
+                highlights: ['Airport Growth Belt', 'HMDA Approved', 'High Appreciation']
+            },
+            {
+                id: 'PLT-106',
+                title: 'Deccan Harvest Farmlands — Estate #04',
+                venture: 'Deccan Harvest Farmlands',
+                location: 'Sadashivpet',
+                landmark: 'Along Mumbai Highway (NH-65) Green Belt',
+                category: 'Agricultural',
+                approval: 'Clear Title Agri',
+                reraNo: 'FREEHOLD-AGRI',
+                areaSqYds: 605,
+                dimensions: '55ft x 99ft (5 Guntas)',
+                facing: 'East',
+                roadWidth: '30ft Approach Road',
+                pricePerSqYd: 3800,
+                totalPriceLakhs: 22.99,
+                image: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80',
+                featured: false,
+                highlights: ['Drip Irrigation', 'Sandalwood & Fruit Trees', 'Fenced Estate']
+            }
+        ];
+
+        // 2. INTERACTIVE LAYOUT VENTURES DATASET
+        const layoutVentures = {
+            amaravati: {
+                name: 'Amaravati Capital Greens',
+                location: 'Amaravati (CRDA)',
+                approval: 'CRDA & RERA Approved',
+                ratePerSqYd: 22500,
+                plots: [
+                    { num: 'C-01', row: 'north', sqYds: 240, facing: 'East', road: '60ft Main Road', status: 'premium' },
+                    { num: 'C-02', row: 'north', sqYds: 200, facing: 'North', road: '60ft Main Road', status: 'available' },
+                    { num: 'C-03', row: 'north', sqYds: 200, facing: 'North', road: '60ft Main Road', status: 'sold' },
+                    { num: 'C-04', row: 'north', sqYds: 220, facing: 'North', road: '60ft Main Road', status: 'available' },
+                    { num: 'C-05', row: 'north', sqYds: 200, facing: 'North', road: '60ft Main Road', status: 'available' },
+                    { num: 'C-06', row: 'north', sqYds: 260, facing: 'North-East', road: '60ft Main Road', status: 'premium' },
+                    { num: 'C-07', row: 'south', sqYds: 180, facing: 'South', road: '40ft Avenue', status: 'available' },
+                    { num: 'C-08', row: 'south', sqYds: 180, facing: 'South', road: '40ft Avenue', status: 'sold' },
+                    { num: 'C-09', row: 'south', sqYds: 200, facing: 'East', road: '40ft Avenue', status: 'available' },
+                    { num: 'C-10', row: 'south', sqYds: 200, facing: 'West', road: '40ft Avenue', status: 'available' },
+                    { num: 'C-11', row: 'south', sqYds: 180, facing: 'South', road: '40ft Avenue', status: 'sold' },
+                    { num: 'C-12', row: 'south', sqYds: 220, facing: 'East', road: '40ft Avenue', status: 'premium' }
+                ]
+            },
+            emerald: {
+                name: 'Emerald Meadows',
+                location: 'Shadnagar (NH-44)',
+                approval: 'HMDA & RERA Approved',
+                ratePerSqYd: 18000,
+                plots: [
+                    { num: 'A-01', row: 'north', sqYds: 220, facing: 'East', road: '60ft Main Road', status: 'premium' },
+                    { num: 'A-02', row: 'north', sqYds: 180, facing: 'North', road: '60ft Main Road', status: 'available' },
+                    { num: 'A-03', row: 'north', sqYds: 180, facing: 'North', road: '60ft Main Road', status: 'available' },
+                    { num: 'A-04', row: 'north', sqYds: 200, facing: 'North', road: '60ft Main Road', status: 'sold' },
+                    { num: 'A-05', row: 'north', sqYds: 180, facing: 'North', road: '60ft Main Road', status: 'available' },
+                    { num: 'A-06', row: 'north', sqYds: 240, facing: 'North-East', road: '60ft Main Road', status: 'premium' },
+                    { num: 'A-07', row: 'south', sqYds: 167, facing: 'South', road: '40ft Avenue', status: 'available' },
+                    { num: 'A-08', row: 'south', sqYds: 167, facing: 'South', road: '40ft Avenue', status: 'available' },
+                    { num: 'A-09', row: 'south', sqYds: 180, facing: 'East', road: '40ft Avenue', status: 'sold' },
+                    { num: 'A-10', row: 'south', sqYds: 180, facing: 'West', road: '40ft Avenue', status: 'available' },
+                    { num: 'A-11', row: 'south', sqYds: 167, facing: 'South', road: '40ft Avenue', status: 'available' },
+                    { num: 'A-12', row: 'south', sqYds: 200, facing: 'East', road: '40ft Avenue', status: 'premium' }
+                ]
+            },
+            silicon: {
+                name: 'Silicon Enclave',
+                location: 'Shankarpally',
+                approval: 'HMDA & RERA Approved',
+                ratePerSqYd: 28000,
+                plots: [
+                    { num: 'V-01', row: 'north', sqYds: 300, facing: 'East', road: '60ft Main Road', status: 'premium' },
+                    { num: 'V-02', row: 'north', sqYds: 267, facing: 'North', road: '60ft Main Road', status: 'available' },
+                    { num: 'V-03', row: 'north', sqYds: 267, facing: 'North', road: '60ft Main Road', status: 'sold' },
+                    { num: 'V-04', row: 'north', sqYds: 267, facing: 'North', road: '60ft Main Road', status: 'available' },
+                    { num: 'V-05', row: 'north', sqYds: 267, facing: 'North', road: '60ft Main Road', status: 'sold' },
+                    { num: 'V-06', row: 'north', sqYds: 320, facing: 'North-East', road: '60ft Main Road', status: 'premium' },
+                    { num: 'V-07', row: 'south', sqYds: 240, facing: 'South', road: '40ft Avenue', status: 'available' },
+                    { num: 'V-08', row: 'south', sqYds: 240, facing: 'South', road: '40ft Avenue', status: 'available' },
+                    { num: 'V-09', row: 'south', sqYds: 250, facing: 'East', road: '40ft Avenue', status: 'available' },
+                    { num: 'V-10', row: 'south', sqYds: 250, facing: 'West', road: '40ft Avenue', status: 'sold' },
+                    { num: 'V-11', row: 'south', sqYds: 240, facing: 'South', road: '40ft Avenue', status: 'available' },
+                    { num: 'V-12', row: 'south', sqYds: 280, facing: 'East', road: '40ft Avenue', status: 'premium' }
+                ]
+            }
+        };
+
+        // STATE
+        let reservedItems = [];
+        let activeBookingItem = null;
+        let selectedLayoutPlotNum = 'C-01';
+
+        // 3. ASSOCIATE CADRE HIERARCHY (EXACT 10 LEVELS: CEO TO ASSOCIATE)
+        const cadreHierarchy = [
+            { level: 1, name: 'CEO', code: 'CEO', slab: 12.0, targetSqYds: '25,000+ Sq.Yds', badgeColor: 'bg-amber-400 text-slate-950', desc: 'Apex leadership & full organization override' },
+            { level: 2, name: 'Executive Director', code: 'ED', slab: 11.0, targetSqYds: '18,000 Sq.Yds', badgeColor: 'bg-amber-200 text-amber-950', desc: 'Regional multi-venture directorate' },
+            { level: 3, name: 'Senior Director', code: 'SD', slab: 10.25, targetSqYds: '12,000 Sq.Yds', badgeColor: 'bg-purple-200 text-purple-950', desc: 'Senior zone head & director mentorship' },
+            { level: 4, name: 'Director', code: 'DIR', slab: 9.5, targetSqYds: '8,000 Sq.Yds', badgeColor: 'bg-purple-100 text-purple-900', desc: 'Corridor leadership & team overrides' },
+            { level: 5, name: 'General Manager', code: 'GM', slab: 8.5, targetSqYds: '5,000 Sq.Yds', badgeColor: 'bg-indigo-100 text-indigo-900', desc: 'Branch operations & manager supervision' },
+            { level: 6, name: 'Deputy General Manager', code: 'DGM', slab: 7.75, targetSqYds: '3,500 Sq.Yds', badgeColor: 'bg-blue-100 text-blue-900', desc: 'Cluster sales & site visit coordination' },
+            { level: 7, name: 'Assistant General Manager', code: 'AGM', slab: 7.0, targetSqYds: '2,200 Sq.Yds', badgeColor: 'bg-sky-100 text-sky-900', desc: 'Team unit scaling & client closing' },
+            { level: 8, name: 'Marketing Manager', code: 'MM', slab: 6.5, targetSqYds: '1,200 Sq.Yds', badgeColor: 'bg-teal-100 text-teal-900', desc: 'Field marketing & associate team lead' },
+            { level: 9, name: 'Assistant Manager', code: 'AM', slab: 5.75, targetSqYds: '600 Sq.Yds', badgeColor: 'bg-emerald-100 text-emerald-900', desc: 'Senior advisor & junior associate mentor' },
+            { level: 10, name: 'Associate', code: 'ASC', slab: 5.0, targetSqYds: 'Entry Rank', badgeColor: 'bg-slate-200 text-slate-900', desc: 'Authorized plot advisor & direct sales' }
+        ];
+
+        // SAMPLE TEAM DIRECTORY COVERING ALL 10 CADRES
+        let teamMembersData = [
+            { id: 'BAP-CEO-001', name: 'Rajasekhar Chowdary', cadre: 'CEO', city: 'Guntur & Amaravati (CRDA)', plotsSold: 142, volume: '₹6.80 Cr', status: 'Active' },
+            { id: 'BAP-ED-004', name: 'Venkateswara Rao K.', cadre: 'Executive Director', city: 'Vijayawada (CRDA)', plotsSold: 98, volume: '₹4.40 Cr', status: 'Active' },
+            { id: 'BAP-SD-009', name: 'Madhavi Latha Reddy', cadre: 'Senior Director', city: 'Hyderabad (HMDA / DTCP)', plotsSold: 76, volume: '₹3.65 Cr', status: 'Active' },
+            { id: 'BAP-DIR-014', name: 'Praveen Kumar Naidu', cadre: 'Director', city: 'Guntur & Amaravati (CRDA)', plotsSold: 54, volume: '₹2.10 Cr', status: 'Active' },
+            { id: 'BAP-GM-021', name: 'Suresh Babu G.', cadre: 'General Manager', city: 'Guntur & Amaravati (CRDA)', plotsSold: 39, volume: '₹1.48 Cr', status: 'Active' },
+            { id: 'BAP-DGM-033', name: 'Anitha Devi M.', cadre: 'Deputy General Manager', city: 'Vijayawada (CRDA)', plotsSold: 28, volume: '₹1.12 Cr', status: 'Active' },
+            { id: 'BAP-AGM-045', name: 'Harish Varma', cadre: 'Assistant General Manager', city: 'Hyderabad (HMDA / DTCP)', plotsSold: 21, volume: '₹88.50 L', status: 'Active' },
+            { id: 'BAP-MM-062', name: 'Kiranmai T.', cadre: 'Marketing Manager', city: 'Guntur & Amaravati (CRDA)', plotsSold: 15, volume: '₹54.00 L', status: 'Active' },
+            { id: 'BAP-AM-084', name: 'Naveen Kumar P.', cadre: 'Assistant Manager', city: 'Guntur & Amaravati (CRDA)', plotsSold: 9, volume: '₹27.00 L', status: 'Active' },
+            { id: 'BAP-ASC-112', name: 'Lakshmi Narayana', cadre: 'Associate', city: 'Guntur & Amaravati (CRDA)', plotsSold: 4, volume: '₹12.00 L', status: 'Active' }
+        ];
+
+        let commissionLedger = [
+            { ref: 'TXN-8901', date: '18 Nov 2026', client: 'M. Subba Rao', venture: 'Guntur ORR Greens (CRDA)', sqYds: 150, comm: '₹54,000', status: 'Paid' },
+            { ref: 'TXN-8944', date: '21 Nov 2026', client: 'K. Padmaja', venture: 'Amaravati Capital Greens', sqYds: 240, comm: '₹1,45,000', status: 'Pending' }
+        ];
+
+        let currentAssociate = null;
+
+        // FORMAT CURRENCY IN LAKHS / RUPEES
+        function formatLakhs(lakhs) {
+            if (lakhs >= 100) {
+                return `₹${(lakhs / 100).toFixed(2)} Cr`;
+            }
+            return `₹${lakhs.toFixed(2)} Lakhs`;
+        }
+
+        // SPA MULTI-PAGE ROUTER
+        function navigateTo(pageId) {
+            // Protect dashboard route if not logged in
+            if (pageId === 'associate-dashboard' && !currentAssociate) {
+                pageId = 'associate-login';
+            }
+
+            // Hide all pages
+            document.querySelectorAll('.page-view').forEach(section => {
+                section.classList.add('hidden');
+                section.classList.remove('block');
+            });
+
+            // Show target page
+            const target = document.getElementById(`page-${pageId}`);
+            if (target) {
+                target.classList.remove('hidden');
+                target.classList.add('block');
+            }
+
+            // Update Desktop Nav active states
+            document.querySelectorAll('.nav-link').forEach(btn => {
+                if (btn.dataset.page === pageId) {
+                    btn.className = 'nav-link px-3.5 py-2 rounded-lg text-sm font-semibold text-brand-700 bg-brand-50 transition';
+                } else {
+                    btn.className = 'nav-link px-3.5 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition flex items-center';
+                }
+            });
+
+            // Update Mobile Nav active states
+            document.querySelectorAll('.mobile-nav-link').forEach(btn => {
+                if (btn.dataset.page === pageId) {
+                    btn.classList.add('bg-brand-50', 'text-brand-700', 'font-semibold');
+                } else {
+                    btn.classList.remove('bg-brand-50', 'text-brand-700', 'font-semibold');
+                }
+            });
+
+            if (pageId === 'layout-map') {
+                renderInteractiveLayout();
+            } else if (pageId === 'associate-register') {
+                renderRegisterCadreList();
+                updateRegCadrePreview();
+            } else if (pageId === 'associate-dashboard') {
+                renderAssociateDashboard();
+            }
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('mobile-menu-icon');
+            menu.classList.toggle('hidden');
+            icon.className = menu.classList.contains('hidden') ? 'fa-solid fa-bars text-xl' : 'fa-solid fa-xmark text-xl';
+        }
+
+        // GENERATE PLOT CARD HTML
+        function createPlotCardHTML(plot) {
+            const isReserved = reservedItems.some(r => r.id === plot.id);
+            return `
+                <article class="bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-52 overflow-hidden bg-slate-200">
+                        <img src="${plot.image}" 
+                             onerror="this.src='https://placehold.co/800x500/065f46/ffffff?text=${encodeURIComponent(plot.venture)}'" 
+                             alt="${plot.title}" 
+                             class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-900/85 backdrop-blur-sm text-white text-xs font-bold">
+                                <i class="fa-solid fa-shield-check text-brand-400 mr-1"></i>${plot.approval}
+                            </span>
+                            <span class="px-2.5 py-1 rounded-lg bg-white/90 text-slate-800 text-xs font-semibold">
+                                ${plot.category}
+                            </span>
+                        </div>
+                        <button onclick="openLegalModal('${plot.title}')" title="Verify Legal Documents" class="absolute bottom-3 right-3 px-2.5 py-1.5 rounded-lg bg-brand-600 hover:bg-brand-700 text-white text-xs font-semibold shadow transition">
+                            <i class="fa-solid fa-file-circle-check mr-1"></i> Legal Docs
+                        </button>
+                    </div>
+
+                    <div class="p-5 flex-grow flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span class="font-semibold text-brand-700"><i class="fa-solid fa-location-dot mr-1"></i>${plot.location}</span>
+                                <span>RERA: ${plot.reraNo}</span>
+                            </div>
+                            <h3 class="font-display text-lg font-bold text-slate-900">${plot.title}</h3>
+                            <p class="text-xs text-slate-500 mt-1">${plot.landmark}</p>
+
+                            <!-- Specs Grid -->
+                            <div class="grid grid-cols-3 gap-2 my-4 p-3 rounded-xl bg-slate-50 border border-slate-100 text-center">
+                                <div>
+                                    <div class="text-[11px] text-slate-400 uppercase">Area</div>
+                                    <div class="text-xs font-bold text-slate-800 mt-0.5">${plot.areaSqYds} Sq.Yds</div>
+                                </div>
+                                <div class="border-x border-slate-200">
+                                    <div class="text-[11px] text-slate-400 uppercase">Facing</div>
+                                    <div class="text-xs font-bold text-slate-800 mt-0.5">${plot.facing}</div>
+                                </div>
+                                <div>
+                                    <div class="text-[11px] text-slate-400 uppercase">Road</div>
+                                    <div class="text-xs font-bold text-slate-800 mt-0.5">${plot.roadWidth.split(' ')[0]}</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex items-end justify-between pt-3 border-t border-slate-100 mb-4">
+                                <div>
+                                    <span class="text-[11px] text-slate-400 block">All-Inclusive Price</span>
+                                    <span class="font-display text-xl font-extrabold text-slate-900">${formatLakhs(plot.totalPriceLakhs)}</span>
+                                </div>
+                                <div class="text-right">
+                                    <span class="text-xs font-semibold text-slate-600">₹${plot.pricePerSqYd.toLocaleString('en-IN')}/sq.yd</span>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-2.5">
+                                <button onclick="navigateTo('contact')" class="py-2.5 px-3 rounded-xl border border-slate-300 hover:bg-slate-50 text-slate-700 text-xs font-bold transition">
+                                    Site Visit
+                                </button>
+                                ${isReserved 
+                                    ? `<button disabled class="py-2.5 px-3 rounded-xl bg-blue-600 text-white text-xs font-bold cursor-default"><i class="fa-solid fa-check mr-1"></i> Reserved</button>`
+                                    : `<button onclick="openBookingModal('${plot.id}')" class="py-2.5 px-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold shadow-sm transition">Book Plot Online</button>`
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            `;
+        }
+
+        // RENDER FEATURED & FILTERED PLOTS
+        function renderFeaturedPlots() {
+            const grid = document.getElementById('featured-plots-grid');
+            const featured = plotsData.filter(p => p.featured);
+            grid.innerHTML = featured.map(createPlotCardHTML).join('');
+        }
+
+        function filterPlots() {
+            const loc = document.getElementById('filter-location').value;
+            const cat = document.getElementById('filter-category').value;
+            const app = document.getElementById('filter-approval').value;
+            const fac = document.getElementById('filter-facing').value;
+            const bud = document.getElementById('filter-budget').value;
+            const sort = document.getElementById('sort-plots').value;
+
+            let filtered = plotsData.filter(p => {
+                if (loc !== 'all' && p.location !== loc) return false;
+                if (cat !== 'all' && p.category !== cat) return false;
+                if (app !== 'all' && p.approval !== app) return false;
+                if (fac !== 'all' && p.facing !== fac) return false;
+                if (bud === 'under-25' && p.totalPriceLakhs >= 25) return false;
+                if (bud === '25-50' && (p.totalPriceLakhs < 25 || p.totalPriceLakhs > 50)) return false;
+                if (bud === 'above-50' && p.totalPriceLakhs <= 50) return false;
+                return true;
+            });
+
+            if (sort === 'price-low') filtered.sort((a, b) => a.totalPriceLakhs - b.totalPriceLakhs);
+            if (sort === 'price-high') filtered.sort((a, b) => b.totalPriceLakhs - a.totalPriceLakhs);
+            if (sort === 'size-high') filtered.sort((a, b) => b.areaSqYds - a.areaSqYds);
+
+            const grid = document.getElementById('all-plots-grid');
+            const counter = document.getElementById('results-counter');
+            counter.textContent = `Showing ${filtered.length} verified plot${filtered.length === 1 ? '' : 's'}`;
+
+            if (filtered.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full bg-white rounded-2xl border border-slate-200 p-12 text-center">
+                        <i class="fa-solid fa-magnifying-glass text-3xl text-slate-300 mb-3"></i>
+                        <h3 class="font-display text-lg font-bold text-slate-800">No plots match your exact filter combination</h3>
+                        <p class="text-sm text-slate-500 mt-1">Try broadening your budget or resetting filters to view all verified layouts.</p>
+                        <button onclick="resetFilters()" class="mt-4 px-5 py-2.5 rounded-xl bg-brand-600 text-white text-sm font-semibold">Reset All Filters</button>
+                    </div>
+                `;
+            } else {
+                grid.innerHTML = filtered.map(createPlotCardHTML).join('');
+            }
+        }
+
+        function resetFilters() {
+            document.getElementById('filter-location').value = 'all';
+            document.getElementById('filter-category').value = 'all';
+            document.getElementById('filter-approval').value = 'all';
+            document.getElementById('filter-facing').value = 'all';
+            document.getElementById('filter-budget').value = 'all';
+            document.getElementById('sort-plots').value = 'featured';
+            filterPlots();
+        }
+
+        function applyHeroSearch() {
+            document.getElementById('filter-location').value = document.getElementById('hero-location').value;
+            document.getElementById('filter-category').value = document.getElementById('hero-category').value;
+            document.getElementById('filter-approval').value = document.getElementById('hero-approval').value;
+            document.getElementById('filter-budget').value = document.getElementById('hero-budget').value;
+            navigateTo('plots');
+            filterPlots();
+        }
+
+        function quickFilterLocation(loc) {
+            resetFilters();
+            document.getElementById('filter-location').value = loc;
+            navigateTo('plots');
+            filterPlots();
+        }
+
+        // INTERACTIVE LAYOUT MAP RENDERING
+        function renderInteractiveLayout() {
+            const ventureKey = document.getElementById('venture-selector').value;
+            const venture = layoutVentures[ventureKey];
+
+            if (!venture.plots.some(p => p.num === selectedLayoutPlotNum)) {
+                selectedLayoutPlotNum = venture.plots[0].num;
+            }
+
+            const northRow = document.getElementById('layout-row-north');
+            const southRow = document.getElementById('layout-row-south');
+
+            const buildPlotTile = (plot) => {
+                const fullId = `${ventureKey}-${plot.num}`;
+                const isUserReserved = reservedItems.some(r => r.id === fullId);
+                const isSelected = selectedLayoutPlotNum === plot.num;
+
+                let bgClass = 'bg-emerald-500 hover:bg-emerald-600 text-white';
+                if (plot.status === 'premium') bgClass = 'bg-amber-400 hover:bg-amber-500 text-slate-900';
+                if (plot.status === 'sold') bgClass = 'bg-slate-300 text-slate-500 cursor-not-allowed';
+                if (isUserReserved) bgClass = 'bg-blue-600 text-white';
+
+                const ringClass = isSelected ? 'ring-4 ring-slate-900 scale-105 z-10' : '';
+
+                return `
+                    <button onclick="selectLayoutPlot('${plot.num}')" 
+                            class="${bgClass} ${ringClass} rounded-lg p-2.5 text-center transition-all shadow-sm flex flex-col items-center justify-center min-h-[76px]">
+                        <span class="font-display font-extrabold text-sm">#${plot.num}</span>
+                        <span class="text-[10px] font-medium opacity-90 mt-0.5">${plot.sqYds} Yds</span>
+                        <span class="text-[9px] uppercase tracking-wider mt-0.5 opacity-80">${isUserReserved ? 'YOURS' : plot.status}</span>
+                    </button>
+                `;
+            };
+
+            northRow.innerHTML = venture.plots.filter(p => p.row === 'north').map(buildPlotTile).join('');
+            southRow.innerHTML = venture.plots.filter(p => p.row === 'south').map(buildPlotTile).join('');
+
+            updateLayoutInspector(ventureKey, selectedLayoutPlotNum);
+        }
+
+        function selectLayoutPlot(plotNum) {
+            selectedLayoutPlotNum = plotNum;
+            renderInteractiveLayout();
+        }
+
+        function updateLayoutInspector(ventureKey, plotNum) {
+            const venture = layoutVentures[ventureKey];
+            const plot = venture.plots.find(p => p.num === plotNum);
+            const fullId = `${ventureKey}-${plot.num}`;
+            const isUserReserved = reservedItems.some(r => r.id === fullId);
+            const totalLakhs = (plot.sqYds * venture.ratePerSqYd) / 100000;
+
+            const panel = document.getElementById('layout-inspector-content');
+            panel.innerHTML = `
+                <div class="flex items-center justify-between mb-3">
+                    <span class="px-2.5 py-1 rounded-lg bg-brand-50 text-brand-700 text-xs font-bold">${venture.approval}</span>
+                    <span class="text-xs font-bold uppercase ${plot.status === 'sold' ? 'text-red-500' : 'text-emerald-600'}">
+                        ● ${isUserReserved ? 'Reserved by You' : plot.status}
+                    </span>
+                </div>
+                <h3 class="font-display text-2xl font-bold text-slate-900">Plot #${plot.num}</h3>
+                <p class="text-xs text-slate-500 mt-0.5">${venture.name} • ${venture.location}</p>
+
+                <div class="my-5 p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2.5 text-sm">
+                    <div class="flex justify-between">
+                        <span class="text-slate-500">Plot Dimensions / Area:</span>
+                        <span class="font-bold text-slate-900">${plot.sqYds} Sq. Yds</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-slate-500">Vaastu Facing:</span>
+                        <span class="font-bold text-slate-900">${plot.facing}</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-slate-500">Abutting Road:</span>
+                        <span class="font-bold text-slate-900">${plot.road}</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-slate-500">Rate per Sq. Yd:</span>
+                        <span class="font-semibold text-slate-800">₹${venture.ratePerSqYd.toLocaleString('en-IN')}</span>
+                    </div>
+                    <div class="pt-2 border-t border-slate-200 flex justify-between items-center">
+                        <span class="font-bold text-slate-700">Total Price:</span>
+                        <span class="font-display text-xl font-extrabold text-brand-700">${formatLakhs(totalLakhs)}</span>
+                    </div>
+                </div>
+
+                ${plot.status === 'sold' 
+                    ? `<button disabled class="w-full py-3.5 rounded-xl bg-slate-200 text-slate-500 font-bold text-sm cursor-not-allowed">Plot Sold Out — Select Another Parcel</button>`
+                    : isUserReserved
+                        ? `<button disabled class="w-full py-3.5 rounded-xl bg-blue-600 text-white font-bold text-sm"><i class="fa-solid fa-check-circle mr-1.5"></i> Locked in Your Reservations</button>`
+                        : `<button onclick="openCustomLayoutBooking('${fullId}', '${venture.name} - Plot #${plot.num}', '${venture.location} • ${venture.approval}', '${plot.sqYds} Sq. Yds • ${plot.facing}', '${formatLakhs(totalLakhs)}')" class="w-full py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-md transition">
+                            Reserve Plot #${plot.num} Online
+                           </button>`
+                }
+
+                <button onclick="openLegalModal('${venture.name} - Plot #${plot.num}')" class="w-full mt-2.5 py-2.5 rounded-xl border border-slate-300 hover:bg-slate-50 text-slate-700 text-xs font-semibold transition">
+                    <i class="fa-solid fa-file-shield text-brand-600 mr-1.5"></i> Inspect Legal Clearance
+                </button>
+            `;
+        }
+
+        // BOOKING MODAL FLOW
+        function openBookingModal(plotId) {
+            const plot = plotsData.find(p => p.id === plotId);
+            if (!plot) return;
+
+            activeBookingItem = {
+                id: plot.id,
+                title: plot.title,
+                subtitle: `${plot.location} • ${plot.approval} (RERA: ${plot.reraNo})`,
+                specs: `${plot.areaSqYds} Sq. Yds • ${plot.facing} Facing`,
+                total: formatLakhs(plot.totalPriceLakhs)
+            };
+
+            populateAndShowBookingModal();
+        }
+
+        function openCustomLayoutBooking(id, title, subtitle, specs, total) {
+            activeBookingItem = { id, title, subtitle, specs, total };
+            populateAndShowBookingModal();
+        }
+
+        function populateAndShowBookingModal() {
+            document.getElementById('modal-plot-title').textContent = `Reserve ${activeBookingItem.title}`;
+            document.getElementById('modal-plot-subtitle').textContent = activeBookingItem.subtitle;
+            document.getElementById('modal-plot-specs').textContent = activeBookingItem.specs;
+            document.getElementById('modal-plot-total').textContent = activeBookingItem.total;
+
+            const modal = document.getElementById('booking-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeBookingModal() {
+            const modal = document.getElementById('booking-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function confirmPlotReservation(e) {
+            e.preventDefault();
+            const buyerName = document.getElementById('booking-buyer-name').value.trim();
+            if (!activeBookingItem) return;
+
+            reservedItems.push({
+                ...activeBookingItem,
+                buyerName,
+                token: '₹25,000 (Refundable)',
+                refCode: 'BAP-' + Math.floor(100000 + Math.random() * 900000)
+            });
+
+            updateSavedBadges();
+            closeBookingModal();
+            renderFeaturedPlots();
+            filterPlots();
+            renderInteractiveLayout();
+
+            showToast(`Success! ${activeBookingItem.title} is locked for ${buyerName} for 15 days.`);
+        }
+
+        function updateSavedBadges() {
+            const count = reservedItems.length;
+            document.getElementById('saved-count-badge').textContent = count;
+            document.getElementById('mobile-saved-badge').textContent = count;
+        }
+
+        // MY BOOKINGS MODAL
+        function openMyBookingsModal() {
+            const list = document.getElementById('my-bookings-list');
+            if (reservedItems.length === 0) {
+                list.innerHTML = `
+                    <div class="text-center py-8 bg-slate-50 rounded-2xl border border-dashed border-slate-200">
+                        <i class="fa-regular fa-bookmark text-2xl text-slate-400 mb-2"></i>
+                        <p class="text-sm font-semibold text-slate-700">No plots reserved yet</p>
+                        <p class="text-xs text-slate-500 mt-1">Explore verified plots or click any parcel on the Interactive Map to lock it.</p>
+                    </div>
+                `;
+            } else {
+                list.innerHTML = reservedItems.map(item => `
+                    <div class="p-4 rounded-2xl bg-brand-50/60 border border-brand-200">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <span class="text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-brand-600 text-white">Ref: ${item.refCode}</span>
+                                <h4 class="font-bold text-slate-900 mt-1">${item.title}</h4>
+                                <p class="text-xs text-slate-600">${item.specs} • Total: ${item.total}</p>
+                                <p class="text-xs text-brand-800 font-medium mt-1">Holder: ${item.buyerName} (${item.token})</p>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            const modal = document.getElementById('my-bookings-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeMyBookingsModal() {
+            const modal = document.getElementById('my-bookings-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        // LEGAL MODAL
+        function openLegalModal(title) {
+            document.getElementById('legal-modal-title').textContent = title;
+            const modal = document.getElementById('legal-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeLegalModal() {
+            const modal = document.getElementById('legal-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        // SITE VISIT FORM HANDLER
+        function handleSiteVisitSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('visit-name').value;
+            const venture = document.getElementById('visit-venture').value;
+            e.target.reset();
+            showToast(`Thank you, ${name}! Your free site visit for ${venture} is confirmed. Our advisor will call shortly.`);
+        }
+
+        // =========================================================
+        // ASSOCIATE PORTAL: REGISTRATION, LOGIN & CADRE DASHBOARD
+        // =========================================================
+        function openAssociatePortal() {
+            if (currentAssociate) {
+                navigateTo('associate-dashboard');
+            } else {
+                navigateTo('associate-login');
+            }
+        }
+
+        function updateHeaderAssociateButton() {
+            const label = document.getElementById('header-associate-label');
+            if (currentAssociate) {
+                label.textContent = `${currentAssociate.cadre} Dashboard`;
+            } else {
+                label.textContent = 'Associate Portal';
+            }
+        }
+
+        function renderRegisterCadreList() {
+            const container = document.getElementById('reg-cadre-list');
+            if (!container) return;
+            container.innerHTML = cadreHierarchy.map(c => `
+                <div class="p-3 rounded-xl border border-slate-200/80 bg-slate-50/60 flex items-center justify-between">
+                    <div class="flex items-center space-x-2.5">
+                        <span class="w-6 h-6 rounded-full bg-slate-900 text-white text-[11px] font-bold flex items-center justify-center">${c.level}</span>
+                        <div>
+                            <div class="text-xs font-bold text-slate-900">${c.name}</div>
+                            <div class="text-[11px] text-slate-500">${c.desc}</div>
+                        </div>
+                    </div>
+                    <div class="text-right shrink-0 ml-2">
+                        <span class="px-2 py-0.5 rounded bg-brand-100 text-brand-800 text-xs font-extrabold">${c.slab}%</span>
+                        <div class="text-[10px] text-slate-400 mt-0.5">${c.targetSqYds}</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function updateRegCadrePreview() {
+            const select = document.getElementById('reg-cadre');
+            const preview = document.getElementById('reg-cadre-preview');
+            if (!select || !preview) return;
+            const info = cadreHierarchy.find(c => c.name === select.value) || cadreHierarchy[9];
+            preview.innerHTML = `
+                <div>
+                    <span class="text-[10px] uppercase tracking-wider text-slate-400 block">Selected Cadre Rank (Level ${info.level} of 10)</span>
+                    <span class="font-display font-bold text-base text-amber-400">${info.name}</span>
+                </div>
+                <div class="text-right">
+                    <span class="text-[10px] uppercase tracking-wider text-slate-400 block">Commission Slab</span>
+                    <span class="font-display font-extrabold text-lg text-brand-400">${info.slab}%</span>
+                </div>
+            `;
+        }
+
+        function handleAssociateRegister(e) {
+            e.preventDefault();
+            const name = document.getElementById('reg-name').value.trim();
+            const phone = document.getElementById('reg-phone').value.trim();
+            const email = document.getElementById('reg-email').value.trim();
+            const cadreName = document.getElementById('reg-cadre').value;
+            const city = document.getElementById('reg-city').value;
+            const sponsor = document.getElementById('reg-sponsor').value.trim() || 'BAP-CEO-001';
+
+            const cadreInfo = cadreHierarchy.find(c => c.name === cadreName) || cadreHierarchy[9];
+            const randomNum = Math.floor(100 + Math.random() * 899);
+            const generatedId = `BAP-${cadreInfo.code}-${randomNum}`;
+
+            currentAssociate = {
+                id: generatedId,
+                name,
+                phone,
+                email,
+                cadre: cadreInfo.name,
+                slab: cadreInfo.slab,
+                city,
+                sponsor,
+                personalSqYds: 300,
+                personalPlots: 2,
+                teamVolumeLakhs: 45.0,
+                teamCount: Math.max(1, (11 - cadreInfo.level) * 3),
+                earnedComm: 54000,
+                pendingComm: 25000
+            };
+
+            teamMembersData.unshift({
+                id: generatedId,
+                name,
+                cadre: cadreInfo.name,
+                city,
+                plotsSold: 2,
+                volume: '₹18.00 L',
+                status: 'Active (You)'
+            });
+
+            updateHeaderAssociateButton();
+            e.target.reset();
+            showToast(`Registration Successful! Your Associate ID is ${generatedId} (${cadreInfo.name}).`);
+            navigateTo('associate-dashboard');
+        }
+
+        function handleAssociateLogin(e) {
+            e.preventDefault();
+            const loginId = document.getElementById('login-id').value.trim().toUpperCase();
+            const matchedMember = teamMembersData.find(m => m.id === loginId);
+
+            if (matchedMember) {
+                const cadreInfo = cadreHierarchy.find(c => c.name === matchedMember.cadre) || cadreHierarchy[9];
+                currentAssociate = {
+                    id: matchedMember.id,
+                    name: matchedMember.name,
+                    phone: '9492900365',
+                    email: `${matchedMember.id.toLowerCase()}@bookaplot.in`,
+                    cadre: matchedMember.cadre,
+                    slab: cadreInfo.slab,
+                    city: matchedMember.city,
+                    sponsor: 'BAP-HEAD-OFFICE',
+                    personalSqYds: matchedMember.plotsSold * 150,
+                    personalPlots: matchedMember.plotsSold,
+                    teamVolumeLakhs: (11 - cadreInfo.level) * 52.5,
+                    teamCount: (11 - cadreInfo.level) * 4,
+                    earnedComm: (11 - cadreInfo.level) * 85000,
+                    pendingComm: (11 - cadreInfo.level) * 18000
+                };
+            } else {
+                // Default login as Associate if custom ID entered
+                currentAssociate = {
+                    id: loginId.startsWith('BAP-') ? loginId : 'BAP-ASC-205',
+                    name: 'Karthikeya Varma',
+                    phone: '9492900365',
+                    email: 'associate@bookaplot.in',
+                    cadre: 'Associate',
+                    slab: 5.0,
+                    city: 'Guntur & Amaravati (CRDA)',
+                    sponsor: 'BAP-MM-062',
+                    personalSqYds: 450,
+                    personalPlots: 3,
+                    teamVolumeLakhs: 27.0,
+                    teamCount: 4,
+                    earnedComm: 135000,
+                    pendingComm: 27000
+                };
+            }
+
+            updateHeaderAssociateButton();
+            showToast(`Welcome back, ${currentAssociate.name} (${currentAssociate.cadre})!`);
+            navigateTo('associate-dashboard');
+        }
+
+        function demoLoginCadre(cadreName) {
+            const member = teamMembersData.find(m => m.cadre === cadreName) || teamMembersData[0];
+            const cadreInfo = cadreHierarchy.find(c => c.name === cadreName) || cadreHierarchy[0];
+            const rankMultiplier = 11 - cadreInfo.level;
+
+            currentAssociate = {
+                id: member.id,
+                name: member.name,
+                phone: '9492900365',
+                email: `${member.id.toLowerCase()}@bookaplot.in`,
+                cadre: cadreInfo.name,
+                slab: cadreInfo.slab,
+                city: member.city,
+                sponsor: cadreName === 'CEO' ? 'BOARD OF DIRECTORS' : 'BAP-CEO-001',
+                personalSqYds: rankMultiplier * 180,
+                personalPlots: rankMultiplier + 2,
+                teamVolumeLakhs: rankMultiplier * 68.0,
+                teamCount: rankMultiplier * 5,
+                earnedComm: rankMultiplier * 96000,
+                pendingComm: rankMultiplier * 22000
+            };
+
+            updateHeaderAssociateButton();
+            showToast(`Logged in with ${cadreInfo.name} Demo Account (${member.id})`);
+            navigateTo('associate-dashboard');
+        }
+
+        function logoutAssociate() {
+            currentAssociate = null;
+            updateHeaderAssociateButton();
+            showToast('You have been securely logged out of the Associate Portal.');
+            navigateTo('associate-login');
+        }
+
+        function renderAssociateDashboard() {
+            if (!currentAssociate) return;
+
+            const initials = currentAssociate.name.split(' ').map(n => n[0]).join('').slice(0, 2).toUpperCase();
+            document.getElementById('dash-avatar').textContent = initials || 'AP';
+            document.getElementById('dash-id-badge').textContent = currentAssociate.id;
+            document.getElementById('dash-cadre-badge').innerHTML = `<i class="fa-solid fa-award mr-1"></i> ${currentAssociate.cadre}`;
+            document.getElementById('dash-slab-badge').textContent = `Commission Slab: ${currentAssociate.slab}%`;
+            document.getElementById('dash-name').textContent = `Welcome, ${currentAssociate.name}`;
+            document.getElementById('dash-city').textContent = currentAssociate.city;
+            document.getElementById('dash-sponsor').textContent = currentAssociate.sponsor;
+
+            // Update KPIs
+            document.getElementById('kpi-personal-sqyds').textContent = `${currentAssociate.personalSqYds.toLocaleString('en-IN')} Sq.Yds`;
+            document.getElementById('kpi-personal-plots').textContent = `${currentAssociate.personalPlots} Verified Plots Sold`;
+            document.getElementById('kpi-team-volume').textContent = formatLakhs(currentAssociate.teamVolumeLakhs);
+            document.getElementById('kpi-team-count').textContent = `${currentAssociate.teamCount} Active Downline Members`;
+            document.getElementById('kpi-earned-comm').textContent = `₹${currentAssociate.earnedComm.toLocaleString('en-IN')}`;
+            document.getElementById('kpi-pending-comm').textContent = `₹${currentAssociate.pendingComm.toLocaleString('en-IN')}`;
+
+            // Render 10-Level Cadre Grid
+            const cadreGrid = document.getElementById('dashboard-cadre-grid');
+            cadreGrid.innerHTML = cadreHierarchy.map(c => {
+                const isCurrent = c.name === currentAssociate.cadre;
+                return `
+                    <div class="rounded-2xl p-4 border transition-all ${isCurrent ? 'bg-slate-900 text-white border-amber-400 ring-2 ring-amber-400 shadow-lg scale-[1.02]' : 'bg-slate-50 text-slate-800 border-slate-200'}">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-[10px] font-bold uppercase px-2 py-0.5 rounded ${isCurrent ? 'bg-amber-400 text-slate-950' : 'bg-slate-200 text-slate-700'}">
+                                Rank #${c.level}
+                            </span>
+                            <span class="font-display font-extrabold text-sm ${isCurrent ? 'text-brand-400' : 'text-brand-700'}">${c.slab}%</span>
+                        </div>
+                        <div class="font-display font-bold text-sm leading-snug">${c.name}</div>
+                        <div class="text-[11px] mt-1 ${isCurrent ? 'text-slate-300' : 'text-slate-500'}">${c.targetSqYds}</div>
+                        ${isCurrent ? '<div class="mt-2 text-[10px] font-bold text-amber-300 uppercase tracking-wider">★ Current Cadre</div>' : ''}
+                    </div>
+                `;
+            }).join('');
+
+            renderCommissionLedger();
+            renderDownlineTable();
+        }
+
+        function handleAssociateClientBooking(e) {
+            e.preventDefault();
+            if (!currentAssociate) return;
+
+            const clientName = document.getElementById('assoc-client-name').value.trim();
+            const sqYds = parseInt(document.getElementById('assoc-client-sqyds').value, 10) || 150;
+            const ventureRaw = document.getElementById('assoc-client-venture').value.split('|');
+            const ventureName = ventureRaw[0];
+            const rate = parseInt(ventureRaw[1], 10) || 6000;
+
+            const dealValue = sqYds * rate;
+            const dealLakhs = dealValue / 100000;
+            const earned = Math.round(dealValue * (currentAssociate.slab / 100));
+
+            currentAssociate.personalSqYds += sqYds;
+            currentAssociate.personalPlots += 1;
+            currentAssociate.teamVolumeLakhs += dealLakhs;
+            currentAssociate.pendingComm += earned;
+
+            commissionLedger.unshift({
+                ref: 'TXN-' + Math.floor(1000 + Math.random() * 9000),
+                date: 'Today',
+                client: clientName,
+                venture: ventureName,
+                sqYds,
+                comm: `₹${earned.toLocaleString('en-IN')}`,
+                status: 'Pending'
+            });
+
+            e.target.reset();
+            renderAssociateDashboard();
+            showToast(`Plot booking logged for ${clientName} (${sqYds} Sq.Yds)! ₹${earned.toLocaleString('en-IN')} added to your pending commission.`);
+        }
+
+        function renderCommissionLedger() {
+            const tbody = document.getElementById('commission-ledger-body');
+            if (!tbody) return;
+            tbody.innerHTML = commissionLedger.map(row => `
+                <tr>
+                    <td class="py-3 pr-3">
+                        <div class="font-mono font-bold text-slate-800">${row.ref}</div>
+                        <div class="text-[11px] text-slate-400">${row.date}</div>
+                    </td>
+                    <td class="py-3 px-3">
+                        <div class="font-semibold text-slate-900">${row.client}</div>
+                        <div class="text-[11px] text-slate-500">${row.venture}</div>
+                    </td>
+                    <td class="py-3 px-3 font-semibold text-slate-700">${row.sqYds}</td>
+                    <td class="py-3 px-3 font-bold text-brand-700">${row.comm}</td>
+                    <td class="py-3 pl-3 text-right">
+                        <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold ${row.status === 'Paid' ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800'}">
+                            ${row.status}
+                        </span>
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        function renderDownlineTable() {
+            const tbody = document.getElementById('downline-table-body');
+            const filter = document.getElementById('team-cadre-filter').value;
+            if (!tbody) return;
+
+            const filtered = filter === 'all'
+                ? teamMembersData
+                : teamMembersData.filter(m => m.cadre === filter);
+
+            tbody.innerHTML = filtered.map(m => {
+                const cInfo = cadreHierarchy.find(c => c.name === m.cadre) || cadreHierarchy[9];
+                return `
+                    <tr class="hover:bg-slate-50/80 transition">
+                        <td class="py-3.5 px-4 font-mono font-bold text-slate-800">${m.id}</td>
+                        <td class="py-3.5 px-4 font-semibold text-slate-900">${m.name}</td>
+                        <td class="py-3.5 px-4">
+                            <span class="px-2.5 py-1 rounded-full text-xs font-bold ${cInfo.badgeColor}">
+                                ${m.cadre} (${cInfo.slab}%)
+                            </span>
+                        </td>
+                        <td class="py-3.5 px-4 text-slate-600">${m.city}</td>
+                        <td class="py-3.5 px-4 font-bold text-slate-800">${m.plotsSold}</td>
+                        <td class="py-3.5 px-4 font-bold text-brand-700">${m.volume}</td>
+                        <td class="py-3.5 px-4 text-right">
+                            <span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold">${m.status}</span>
+                        </td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        function copyReferralLink() {
+            if (!currentAssociate) return;
+            const link = `${window.location.origin}/?ref=${currentAssociate.id}`;
+            const tempInput = document.createElement('input');
+            tempInput.value = link;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            showToast(`Associate Referral Link copied: ${currentAssociate.id}`);
+        }
+
+        // TOAST NOTIFICATION SYSTEM
+        function showToast(message) {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            toast.className = 'pointer-events-auto bg-slate-900 text-white px-4 py-3.5 rounded-2xl shadow-xl border border-slate-700 flex items-start space-x-3 mb-3 transition-all duration-300';
+            toast.innerHTML = `
+                <i class="fa-solid fa-circle-check text-brand-400 text-lg mt-0.5"></i>
+                <div class="text-xs sm:text-sm font-medium leading-snug flex-1">${message}</div>
+            `;
+            container.appendChild(toast);
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                setTimeout(() => toast.remove(), 300);
+            }, 4500);
+        }
+
+        // INITIALIZE ON LOAD
+        window.addEventListener('DOMContentLoaded', () => {
+            renderFeaturedPlots();
+            filterPlots();
+            renderInteractiveLayout();
+            renderRegisterCadreList();
+            updateRegCadrePreview();
+        });
+    </script>
+</body>
+</html>
